@@ -3,7 +3,7 @@ import RequirementsList from "./RequirementsList"
 import Campus from "./Campus"
 import SectionHeading from "../Shared/SectionHeading"
 import { Grid } from "@material-ui/core"
-import { requirements } from "../../API/internship"
+import { requirements } from "../../Api/internship"
 
 const Requirements = () => {
   return (
