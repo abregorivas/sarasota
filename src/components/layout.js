@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import MainNav from "./Navigation/MainNav"
 import { MuiThemeProvider } from "@material-ui/core/styles"
-import { CircularProgress, CssBaseline } from "@material-ui/core"
+import { CssBaseline } from "@material-ui/core"
 import theme from "../theme"
 
 const Layout = ({ children }) => {
