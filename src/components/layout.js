@@ -5,6 +5,7 @@ import MainNav from "./Navigation/MainNav"
 import { MuiThemeProvider } from "@material-ui/core/styles"
 import { CssBaseline } from "@material-ui/core"
 import theme from "../theme"
+import Footer from "./Footer/Footer"
 
 const Layout = ({ children }) => {
   return (
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
       <MuiThemeProvider theme={theme}>
         <MainNav />
         {children}
+        <Footer />
       </MuiThemeProvider>
     </Fragment>
   )
