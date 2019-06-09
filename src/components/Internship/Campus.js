@@ -1,6 +1,6 @@
 import React from "react"
 import { Card, CardMedia, Grid } from "@material-ui/core"
-import { campusInfo } from "../../API/campus"
+import { campusInfo } from "../../Api/campus"
 import uuidv1 from "uuid"
 import { makeStyles, createStyles } from "@material-ui/styles"
 
