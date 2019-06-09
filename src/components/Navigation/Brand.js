@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Typography, Link, withStyles } from "@material-ui/core"
+import { Typography, Link } from "@material-ui/core"
 import logo from "../../images/scf-logo-lg.png"
 import { makeStyles, createStyles } from "@material-ui/styles"
 import { Link as GatsbyLink } from "gatsby"
