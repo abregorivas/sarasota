@@ -3,13 +3,7 @@ import PropTypes from "prop-types"
 import { makeStyles, createStyles } from "@material-ui/styles"
 import forestRoad from "../../images/hero-bg.jpg"
 
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  withStyles,
-} from "@material-ui/core"
+import { Card, CardMedia, CardContent, Typography } from "@material-ui/core"
 
 const useStyles = makeStyles(theme =>
   createStyles({
