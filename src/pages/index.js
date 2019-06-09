@@ -4,6 +4,7 @@ import SEO from "../components/seo"
 import Family from "../components/Family/Family"
 import Mission from "../components/Mission/Mission"
 import Visit from "../components/Visit/Visit"
+import Contact from "../components/Contact/Contact"
 
 const IndexPage = () => (
   <Layout>
@@ -11,6 +12,7 @@ const IndexPage = () => (
     <Family />
     <Mission />
     <Visit />
+    <Contact />
   </Layout>
 )
 

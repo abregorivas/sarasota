@@ -40,7 +40,6 @@ const Sitemap = props => {
       ))}
       <ListItem className={classes.listItem} onClick={toggleModal}>
         <Button size="small" className={classes.root} color="secondary">
-          {" "}
           Privacy Policy
         </Button>
       </ListItem>
