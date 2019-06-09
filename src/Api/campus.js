@@ -1,6 +1,6 @@
 import eckerd from "../images/eckerd-logo.png"
 import ncf from "../images/ncf-logo.png"
-import rcad from "../images/RCAD_logo.png"
+import rcad from "../images/RCAD_Logo.png"
 import scf from "../images/state-college-fl-logo.png"
 import suncoast from "../images/suncoast-logo.png"
 import usf from "../images/usf-logo.png"
