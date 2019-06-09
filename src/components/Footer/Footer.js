@@ -9,7 +9,7 @@ import {
 } from "@material-ui/core"
 
 import Donation from "./Donation"
-import Sitemap from "./Sitemap"
+import Sitemap from "./SiteMap"
 import Visitus from "./Visit"
 import ipiLogo from "../../images/ipilogo.png"
 import PrivacyPolicy from "./PrivacyPolicy"
