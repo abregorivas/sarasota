@@ -7,11 +7,12 @@ const useStyles = makeStyles(theme =>
   createStyles({
     root: {
       flexGrow: 1,
-      paddingTop: theme.spacing(12),
-      paddingBottom: theme.spacing(12),
+      paddingTop: theme.spacing(8),
+      paddingBottom: theme.spacing(8),
       backgroundColor: "transparent",
       borderRadius: 0,
-      border: "none"
+      border: "none",
+
     }
   })
 );

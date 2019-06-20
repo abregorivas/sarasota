@@ -6,11 +6,11 @@ import { makeStyles, createStyles } from "@material-ui/styles";
 const useStyles = makeStyles(theme =>
   createStyles({
     root: {
-      paddingTop: 0,
-      paddingBottom: theme.spacing(2)
+      padding: theme.spacing(4),
     },
     heading: {
-      color: theme.palette.text.primary
+      color: theme.palette.text.primary,
+      fontWeight: 'bold'
     },
     subHeading: {
       color: theme.palette.text.secondary
