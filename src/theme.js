@@ -7,8 +7,17 @@ function pxToRem(value) {
 
 const breakpoints = createBreakpoints({})
 const theme = createMuiTheme({
-  breakpoints,
+
   useNextVariants: true,
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      md: 850,
+      lg: 1280,
+      xl: 1920
+    }
+  },
   palette: {
     primary: { main: "#00939f" },
     secondary: { main: "#e66a53" },
