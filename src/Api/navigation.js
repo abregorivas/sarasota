@@ -7,6 +7,6 @@ export const MainNavRoutes = [
   {
     route: "https://www.scgov.net/home",
     label: "Sarasota",
-    external: true
-  }
-];
+    external: true,
+  },
+]
