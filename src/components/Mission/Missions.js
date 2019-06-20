@@ -1,9 +1,7 @@
 import React from "react"
 import { makeStyles, useTheme } from "@material-ui/core/styles"
-import MobileStepper from "@material-ui/core/MobileStepper"
-import { Card, CardContent, Typography, Button } from "@material-ui/core"
-import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft"
-import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight"
+
+import { Card, CardContent, Typography } from "@material-ui/core"
 import SwipeableViews from "react-swipeable-views"
 import { autoPlay } from "react-swipeable-views-utils"
 import MissionAvatar from "./MissionAvatar"
@@ -36,7 +34,7 @@ const tutorialSteps = [
 
 const useStyles = makeStyles(theme => ({
   root: {
-    // maxWidth: 550,
+    margin: theme.spacing(2),
     flexGrow: 1,
     paddingTop: 0,
     paddingBottom: 0,
@@ -72,15 +70,6 @@ function SwipeableTextMobileStepper() {
   const classes = useStyles()
   const theme = useTheme()
   const [activeStep, setActiveStep] = React.useState(0)
-  const maxSteps = tutorialSteps.length
-
-  function handleNext() {
-    setActiveStep(prevActiveStep => prevActiveStep + 1)
-  }
-
-  function handleBack() {
-    setActiveStep(prevActiveStep => prevActiveStep - 1)
-  }
 
   function handleStepChange(step) {
     setActiveStep(step)
@@ -132,36 +121,6 @@ function SwipeableTextMobileStepper() {
           </div>
         ))}
       </AutoPlaySwipeableViews>
-      <MobileStepper
-        steps={maxSteps}
-        position="static"
-        variant="text"
-        activeStep={activeStep}
-        nextButton={
-          <Button
-            size="small"
-            onClick={handleNext}
-            disabled={activeStep === maxSteps - 1}
-          >
-            Next
-            {theme.direction === "rtl" ? (
-              <KeyboardArrowLeft />
-            ) : (
-              <KeyboardArrowRight />
-            )}
-          </Button>
-        }
-        backButton={
-          <Button size="small" onClick={handleBack} disabled={activeStep === 0}>
-            {theme.direction === "rtl" ? (
-              <KeyboardArrowRight />
-            ) : (
-              <KeyboardArrowLeft />
-            )}
-            Back
-          </Button>
-        }
-      />
     </div>
   )
 }
