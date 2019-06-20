@@ -1,11 +1,9 @@
 import React, { useState } from "react"
 import {
   Typography,
-  Container,
   Grid,
   Card,
   CardMedia,
-  Modal,
 } from "@material-ui/core"
 
 import Donation from "./Donation"
@@ -14,14 +12,14 @@ import Visitus from "./Visit"
 import ipiLogo from "../../images/ipilogo.png"
 import PrivacyPolicy from "./PrivacyPolicy"
 import { makeStyles, createStyles } from "@material-ui/styles"
+import DialogContainer from "../Shared/DialogContainer"
+import SectionContainer from "../Shared/SectionContainer"
 
 const useStyles = makeStyles(theme =>
   createStyles({
     root: {
-      paddingTop: theme.spacing(4),
       backgroundColor: "#231E1F",
       color: "#FEFEFE",
-      margin: 0,
     },
     caption: {
       color: "#7D7C7C",
@@ -51,15 +49,7 @@ const Footer = props => {
 
   return (
     <div className={classes.root}>
-      <Modal
-        aria-labelledby="simple-modal-title"
-        aria-describedby="simple-modal-description"
-        open={status}
-        onClose={() => handleClose(false)}
-      >
-        <PrivacyPolicy />
-      </Modal>
-      <Container>
+      <SectionContainer id="footer">
         <Grid container spacing={4}>
           <Grid item xs={6} sm={3}>
             <Typography variant="body1">Visit Us</Typography>
@@ -88,9 +78,16 @@ const Footer = props => {
           <Grid item xs={6} sm={3}>
             <Typography variant="body1">Site Map</Typography>
             <Sitemap toggleModal={() => handleOpen()} />
+            <DialogContainer
+              title="Privacy Policy"
+              open={status}
+              handleClose={() => handleClose()}
+            >
+              <PrivacyPolicy />
+            </DialogContainer>
           </Grid>
         </Grid>
-      </Container>
+      </SectionContainer>
     </div>
   )
 }

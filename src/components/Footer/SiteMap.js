@@ -22,7 +22,7 @@ const useStyles = makeStyles(theme =>
 const Sitemap = props => {
   const classes = useStyles()
   const { toggleModal } = props
-  const [listItems, setItems] = useState([
+  const [listItems] = useState([
     "Mission",
     "Services",
     "Sermons",

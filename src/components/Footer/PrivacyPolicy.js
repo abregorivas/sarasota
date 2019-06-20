@@ -1,25 +1,11 @@
 import React from "react"
-import { Card, Typography } from "@material-ui/core"
+import { Grid, Typography } from "@material-ui/core"
 import { makeStyles, createStyles } from "@material-ui/styles"
 
 const useStyles = makeStyles(theme =>
   createStyles({
-    paper: {
-      position: "absolute",
-      backgroundColor: "#F6F6F6",
-      boxShadow: theme.shadows[5],
-      padding: theme.spacing(4),
-      outline: "none",
-      top: `50%`,
-      left: `50%`,
-      transform: `translate(-50%, -50%)`,
-    },
-    card: {
-      paddingLeft: theme.spacing(6),
-      paddingRight: theme.spacing(6),
-      paddingTop: theme.spacing(6),
-      paddingBottom: theme.spacing(6),
-      width: 700,
+    root: {
+      marginTop: 80
     },
     text: {
       marginBottom: theme.spacing(2),
@@ -30,8 +16,8 @@ const useStyles = makeStyles(theme =>
 const PrivacyPolicy = props => {
   const classes = useStyles()
   return (
-    <div className={classes.paper}>
-      <Card className={classes.card}>
+    <Grid container spacing={3} style={{ marginTop: "80px" }}>
+      <Grid item xs={12} sm={8}>
         <Typography gutterBottom variant="h4" component="h4">
           Privacy Policy
         </Typography>
@@ -85,9 +71,10 @@ const PrivacyPolicy = props => {
           and/or answer questions. Sarasota Christian Fellowship will never sell
           or share your information with other companies.
         </Typography>
-      </Card>
-    </div>
+      </Grid>
+    </Grid>
   )
 }
 
 export default PrivacyPolicy
+
