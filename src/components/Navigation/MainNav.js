@@ -3,7 +3,6 @@ import Brand from "./Brand"
 import Menu from "./Menu"
 import MenuIcon from "@material-ui/icons/Menu"
 import SideBar from "./Sidebar"
-import Hero from "../Hero/Hero"
 import { makeStyles } from "@material-ui/styles"
 import { MainNavRoutes } from "../../Api/navigation"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
@@ -58,7 +57,7 @@ const MainNav = () => {
           )}
         </Toolbar>
       </AppBar>
-      <Hero />
+
       <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
         <SideBar menuItems={MainNavRoutes} />
       </Drawer>
