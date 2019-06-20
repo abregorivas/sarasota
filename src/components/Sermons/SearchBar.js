@@ -1,8 +1,16 @@
-import React from "react"
+import React, { useState } from "react"
+import PropTypes from "prop-types"
 import { makeStyles, createStyles } from "@material-ui/styles"
 import { fade } from "@material-ui/core/styles/colorManipulator"
 import SearchIcon from "@material-ui/icons/Search"
-import { AppBar, Toolbar, Typography, InputBase } from "@material-ui/core"
+import CloseIcon from "@material-ui/icons/Close"
+import {
+  AppBar,
+  IconButton,
+  Toolbar,
+  Typography,
+  InputBase,
+} from "@material-ui/core"
 
 const useStyles = makeStyles(theme =>
   createStyles({
@@ -21,6 +29,7 @@ const useStyles = makeStyles(theme =>
         backgroundColor: fade(theme.palette.common.white, 0.25),
       },
       marginLeft: 0,
+      marginRight: theme.spacing(2),
       width: "100%",
       [theme.breakpoints.up("md")]: {
         marginLeft: theme.spacing(1),
@@ -55,11 +64,27 @@ const useStyles = makeStyles(theme =>
 
 const SearchBar = props => {
   const classes = useStyles()
-  const { searchValue, setSearchValue } = props
+  const { filterSearch, handleClose } = props
+  const [values, setValues] = useState({
+    search: "",
+  })
+
+  const handleChange = name => event => {
+    setValues({ ...values, [name]: event.target.value })
+    filterSearch(values.search)
+  }
 
   return (
-    <AppBar position="static">
+    <AppBar position="relative">
       <Toolbar>
+        <IconButton
+          edge="start"
+          color="inherit"
+          onClick={handleClose}
+          aria-label="Close"
+        >
+          <CloseIcon />
+        </IconButton>
         <Typography variant="h5" className={classes.title}>
           Sermons
         </Typography>
@@ -68,8 +93,8 @@ const SearchBar = props => {
             <SearchIcon />
           </div>
           <InputBase
-            value={searchValue}
-            onChange={e => setSearchValue(e.target.value)}
+            value={values.search}
+            onChange={handleChange("search")}
             placeholder="Search by title…"
             classes={{
               root: classes.inputRoot,
@@ -80,6 +105,12 @@ const SearchBar = props => {
       </Toolbar>
     </AppBar>
   )
+}
+
+SearchBar.propTypes = {
+  classes: PropTypes.object,
+  filterSearch: PropTypes.func,
+  handleClose: PropTypes.func,
 }
 
 export default SearchBar
