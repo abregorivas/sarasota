@@ -26,29 +26,28 @@ const Benefits = () => {
   const classes = useStyles()
   return (
     <React.Fragment>
-      <ListItem component="li">
+
+      <ListItem>
         <ListItemAvatar>
-          <!--suppress RequiredAttributes -->
           <Avatar className={classNames(classes.avatar, classes.avatarHeadSet)}> <HeadSetIcon /></Avatar>
         </ListItemAvatar>
         <ListItemText> Listen </ListItemText>
       </ListItem>
-      <!--suppress RequiredAttributes -->
+
       <ListItem>
         <ListItemAvatar >
-          <!--suppress RequiredAttributes -->
           <Avatar className={classNames(classes.avatar, classes.avatarHeart)} > <FavoriteIcon /></Avatar>
         </ListItemAvatar>
         <ListItemText> Love </ListItemText>
       </ListItem>
-      <!--suppress RequiredAttributes -->
+
       <ListItem>
         <ListItemAvatar>
-          <!--suppress RequiredAttributes -->
           <Avatar className={classNames(classes.avatar, classes.avatarCloud)}> <CloudDownloadIcon /></Avatar>
         </ListItemAvatar>
         <ListItemText> Download </ListItemText>
       </ListItem>
+
     </React.Fragment>
   )
 }
