@@ -1,5 +1,4 @@
 import React from "react"
-import PropTypes from "prop-types"
 import { makeStyles, createStyles } from "@material-ui/styles"
 import forestRoad from "../../images/hero-bg.jpg"
 
@@ -17,6 +16,7 @@ const useStyles = makeStyles(theme =>
       width: "100%",
       position: "absolute",
       top: "35%",
+      padding: theme.spacing(8),
       [theme.breakpoints.down("md")]: {
         top: "30%",
       },
@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme =>
   })
 )
 
-const Hero = props => {
+const Hero = () => {
   const classes = useStyles()
 
   return (
@@ -63,7 +63,5 @@ const Hero = props => {
     </Card>
   )
 }
-
-Hero.propTypes = { classes: PropTypes.object }
 
 export default Hero
