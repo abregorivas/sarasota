@@ -10,7 +10,7 @@ import { visitusApi } from "../../Api/visitus"
 import SectionContainer from "../Shared/SectionContainer"
 import SectionHeading from "../Shared/SectionHeading"
 import { makeStyles, createStyles } from "@material-ui/styles"
-import { CardHeader, Grid, Modal, IconButton } from "@material-ui/core"
+import { CardHeader, Grid, Modal, IconButton,Typography } from "@material-ui/core"
 
 const useStyles = makeStyles(theme =>
   createStyles({
@@ -26,10 +26,13 @@ const useStyles = makeStyles(theme =>
     title: {
       fontSize: "12px",
     },
+    venueText: {
+      color: theme.palette.text.secondary
+    }
   })
 )
 
-const Visit = props => {
+const Visit = () => {
   const classes = useStyles()
   const [status, setStatus] = useState(false)
   const [map, setMap] = useState("")
@@ -55,7 +58,7 @@ const Visit = props => {
         <GoogleMap url={map} />
       </Modal>
 
-      <Grid container spacing={3}>
+      <Grid container spacing={2}>
         <Grid item xs={12}>
           <SectionHeading
             heading="Services"
@@ -70,9 +73,9 @@ const Visit = props => {
             addr2={visitusApi.churchService.addr2}
           >
             <CardHeader
-              className={classes.title}
-              title={visitusApi.churchService.title}
-              subheader={visitusApi.churchService.venue}
+              disableTypography='true'
+              title={ <Typography varient="body2">{ visitusApi.churchService.title}</Typography> }
+              subheader={ <Typography varient="caption" className={classes.venueText}>{ visitusApi.churchService.venue}</Typography> }
               action={
                 <IconButton
                   onClick={() => handleOpen(visitusApi.churchService.mapUrl)}
@@ -91,8 +94,9 @@ const Visit = props => {
             addr2={visitusApi.bibleStudy.addr2}
           >
             <CardHeader
-              title={visitusApi.bibleStudy.title}
-              subheader={visitusApi.bibleStudy.venue}
+              disableTypography='true'
+              title={ <Typography varient="body2">{ visitusApi.bibleStudy.title}</Typography> }
+              subheader={ <Typography varient="caption" className={classes.venueText}>{ visitusApi.bibleStudy.venue}</Typography> }
               action={
                 <IconButton
                   onClick={() => {
@@ -113,8 +117,9 @@ const Visit = props => {
             addr2="Send us an Email "
           >
             <CardHeader
-              title="One on One"
-              subheader="Spiritual Guidance"
+              disableTypography='true'
+              title={ <Typography varient="body2">One on One</Typography> }
+              subheader={ <Typography varient="caption" className={classes.venueText}>Spiritual Guidance</Typography> }
               action={
                 <IconButton href="#contact">
                   <Email />
