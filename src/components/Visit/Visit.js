@@ -10,7 +10,7 @@ import { visitusApi } from "../../Api/visitus"
 import SectionContainer from "../Shared/SectionContainer"
 import SectionHeading from "../Shared/SectionHeading"
 import { makeStyles, createStyles } from "@material-ui/styles"
-import { CardHeader, Grid, Modal, IconButton,Typography } from "@material-ui/core"
+import { CardHeader, Grid, Modal, IconButton, Typography } from "@material-ui/core"
 
 const useStyles = makeStyles(theme =>
   createStyles({
@@ -28,7 +28,21 @@ const useStyles = makeStyles(theme =>
     },
     venueText: {
       color: theme.palette.text.secondary
-    }
+    },
+    card: {
+      position: "absolute",
+      backgroundColor: theme.palette.background.paper,
+      boxShadow: theme.shadows[5],
+      padding: theme.spacing(4),
+      outline: "none",
+      top: `50%`,
+      left: `50%`,
+      transform: `translate(-50%, -50%)`,
+    },
+    media: {
+      width: 600,
+      height: 400,
+    },
   })
 )
 
@@ -55,7 +69,7 @@ const Visit = () => {
         open={status}
         onClose={() => handleClose(false)}
       >
-        <GoogleMap url={map} />
+        <GoogleMap url={map} classes={classes}/>
       </Modal>
 
       <Grid container spacing={2}>
@@ -73,7 +87,7 @@ const Visit = () => {
             addr2={visitusApi.churchService.addr2}
           >
             <CardHeader
-              disableTypography='true'
+              disableTypography={true}
               title={ <Typography varient="body2">{ visitusApi.churchService.title}</Typography> }
               subheader={ <Typography varient="caption" className={classes.venueText}>{ visitusApi.churchService.venue}</Typography> }
               action={
@@ -94,7 +108,7 @@ const Visit = () => {
             addr2={visitusApi.bibleStudy.addr2}
           >
             <CardHeader
-              disableTypography='true'
+              disableTypography={true}
               title={ <Typography varient="body2">{ visitusApi.bibleStudy.title}</Typography> }
               subheader={ <Typography varient="caption" className={classes.venueText}>{ visitusApi.bibleStudy.venue}</Typography> }
               action={
@@ -117,7 +131,7 @@ const Visit = () => {
             addr2="Send us an Email "
           >
             <CardHeader
-              disableTypography='true'
+              disableTypography={true}
               title={ <Typography varient="body2">One on One</Typography> }
               subheader={ <Typography varient="caption" className={classes.venueText}>Spiritual Guidance</Typography> }
               action={
