@@ -33,7 +33,7 @@ const Internship = () => {
         <Grid container spacing={6}
               alignItems="center"
               direction={`${matches}` === 'true' ? 'column-reverse' : 'row'}>
-          <Grid item xs={12} sm={6} >
+          <Grid item xs={12} md={6} >
             <SectionHeading heading="Internship" />
             <ContentCard>
             <Typography
@@ -67,7 +67,7 @@ const Internship = () => {
               <Requirements />
             </DialogContainer>
           </Grid>
-          <Grid item xs={12} sm={6} >
+          <Grid item xs={12} md={6} >
             <ImgCard imgSrc={intershipImg} />
           </Grid>
 
