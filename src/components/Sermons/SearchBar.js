@@ -17,6 +17,7 @@ const useStyles = makeStyles(theme =>
     title: {
       flexGrow: 1,
       display: "none",
+      marginLeft: theme.spacing(2),
       [theme.breakpoints.up("md")]: {
         display: "block",
       },
@@ -71,11 +72,11 @@ const SearchBar = props => {
 
   const handleChange = name => event => {
     setValues({ ...values, [name]: event.target.value })
-    filterSearch(values.search)
+    filterSearch(event.target.value)
   }
 
   return (
-    <AppBar position="relative">
+    <AppBar position="fixed">
       <Toolbar>
         <IconButton
           edge="start"
