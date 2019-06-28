@@ -9,6 +9,8 @@ const useStyles = makeStyles(theme =>
   createStyles({
     brand: {
       display: "flex",
+      justifyContent: "space-between",
+      flexShrink: 0,
     },
     brandText: {
       paddingLeft: theme.spacing(2),
@@ -17,8 +19,8 @@ const useStyles = makeStyles(theme =>
       justifyContent: "center",
     },
     caption: {
+      fontFamily: `'Raleway', 'sans-serif'`,
       color: theme.palette.text.secondary,
-      fontSize: 12,
     },
     logo: {
       height: 80,
