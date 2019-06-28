@@ -5,20 +5,49 @@ import MenuIcon from "@material-ui/icons/Menu"
 import SideBar from "./Sidebar"
 import { makeStyles } from "@material-ui/styles"
 import { MainNavRoutes } from "../../Api/navigation"
+import ChevronLeftIcon from "@material-ui/icons/ChevronLeft"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
-import { AppBar, Toolbar, Drawer, IconButton } from "@material-ui/core"
+import {
+  AppBar,
+  Toolbar,
+  Drawer,
+  IconButton,
+  Divider,
+  Typography,
+} from "@material-ui/core"
 
-const useStyles = makeStyles({
+const useStyles = makeStyles(theme => ({
+  root: {},
   toolbar: {
     justifyContent: "Space-between",
     height: "100px",
     backgroundColor: "white",
   },
-})
+  drawer: {
+    width: 240,
+    flexShrink: 0,
+  },
+  toolbarDrawer: {
+    minHeight: 100,
+    backgroundColor: theme.palette.primary.dark,
+    color: "white",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "0 16px",
+    ...theme.mixins.toolbar,
+    textTransform: "uppercase",
+  },
+  bigAvatar: {
+    margin: 10,
+    width: 40,
+    height: 40,
+  },
+}))
 
 const MainNav = () => {
   const classes = useStyles()
-  const matches = useMediaQuery("(max-width:800px)")
+  const matches = useMediaQuery("(max-width:1000px)")
 
   const [state, setState] = useState({
     top: false,
@@ -58,7 +87,20 @@ const MainNav = () => {
         </Toolbar>
       </AppBar>
 
-      <Drawer open={state.left} onClose={toggleDrawer("left", false)}>
+      <Drawer
+        className={classes.drawer}
+        open={state.left}
+        onClose={toggleDrawer("left", false)}
+      >
+        <div className={classes.toolbarDrawer}>
+          <div>
+            <Typography variant="h5">Sarasota</Typography>
+          </div>
+          <IconButton onClick={toggleDrawer("left", false)}>
+            <ChevronLeftIcon />
+          </IconButton>
+        </div>
+        <Divider />
         <SideBar menuItems={MainNavRoutes} />
       </Drawer>
     </nav>
