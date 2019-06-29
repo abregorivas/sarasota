@@ -1,79 +1,115 @@
 import React from "react"
-import { Card, Grid, CardMedia, Typography } from "@material-ui/core"
+import { Button, Grid, Typography } from "@material-ui/core"
 import SectionContainer from "../Shared/SectionContainer"
 import SectionHeading from "../Shared/SectionHeading"
 import { makeStyles, createStyles } from "@material-ui/styles"
-import family1 from '../../images/Family1.png'
-import family2 from '../../images/Family2.png'
-import { useTheme } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import ContentCard from '../Shared/ContentCard'
+import { useTheme } from "@material-ui/core/styles"
+import useMediaQuery from "@material-ui/core/useMediaQuery"
+import zindlers from "../../images/ZindlerFamily.jpg"
+import mechams from "../../images/MeachamFamily.png"
+import chanti from "../../images/ChantiBoschetti.jpg"
+import family from "../../images/family.jpg"
 
+import ImgGallery from "../Shared/ImgGallery"
+
+const tileData = [
+  {
+    img: family,
+    title: "Sarasota Chistian Fellowship",
+    author: "",
+  },
+  {
+    img: zindlers,
+    title: 'The Zindler Family"',
+    author: "",
+  },
+  {
+    img: mechams,
+    title: "The Mecham Family",
+    author: "",
+  },
+  {
+    img: chanti,
+    title: "Chanti Boschetti",
+    author: "",
+  },
+]
 
 const useStyles = makeStyles(theme =>
   createStyles({
     root: {
       flexGrow: 1,
-    },
-    card: {
-      maxHeight: 285,
-      height: "auto",
-      margin: `0 auto`,
-      [theme.breakpoints.down("xs")]: {
-        maxHeight: 285,
-        minHeight: 285,
+      height: `calc(100vh - 92px)`,
+      backgroundColor: "#FEFEFE",
+      [theme.breakpoints.down("md")]: {
+        height: "auto",
       },
-      media: {},
     },
-    subcontent: {
-      maxWidth: 400,
-      margin: `0 auto`,
-      marginTop: theme.spacing(4),
-      marginBottom: theme.spacing(8),
+    button: {
+      border: `1px solid #F5B733`,
+      backgroundColor: "#FEFEFE",
+      fontWeight: "bold",
+      borderRadius: 0,
+      paddingRight: theme.spacing(3),
+      paddingLeft: theme.spacing(3),
+      "&:hover": {
+        backgroundColor: "#F5B733",
+      },
+    },
+    content: {
+      maxWidth: 500,
     },
     familyImg: {
-      boxShadow: 'none',
+      boxShadow: "none",
       margin: theme.spacing(2),
-      backgroundColor: 'transparent',
+      backgroundColor: "transparent",
       [theme.breakpoints.down("md")]: {
-        maxWidth: 800
-    }
-    }
+        maxWidth: 800,
+      },
+    },
   })
 )
 
 const Family = () => {
   const classes = useStyles()
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.down('sm'));
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down("sm"))
 
   return (
-    <SectionContainer id="Family">
-      <div className={classes.root}>
-        <Grid container spacing={4} alignItems="center" direction={`${matches}` === 'true' ? 'column-reverse' : 'row'}>
-          <Grid item xs={12} md={6}>
-            <SectionHeading
-              heading="Family"
-              subHeading="Love is our glue"
-            />
-            <ContentCard>
-            <Typography variant="body1">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, autem, beatae consectetur deserunt excepturi, expedita hic illo laudantium libero maiores minima modi mollitia nemo nihil placeat repudiandae tenetur vero voluptas?
-            </Typography>
-            </ContentCard>
+    <div className={classes.root}>
+      <SectionContainer id="Family">
+        <Grid
+          container
+          spacing={4}
+          alignItems="center"
+          direction={`${matches}` === "true" ? "column-reverse" : "row"}
+        >
+          <Grid container item xs={12} md={6}>
+            <SectionHeading headings={["Love Is", "Our Glue"]} />
+            <Grid item xs={12} md={11}>
+              <Typography className={classes.content} variant="body2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                autem, beatae consectetur deserunt excepturi, expedita hic illo
+                laudantium libero maiores minima modi mollitia
+              </Typography>
+              <br />
+              <Typography className={classes.content} variant="body2">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
+                autem, beatae consectetur deserunt excepturi, expedita hic illo
+                laudantium libero maiores minima modi mollitia
+              </Typography>
+              <br />
+              <Button className={classes.button} variant="outlined">
+                Read Bios
+              </Button>
+            </Grid>
           </Grid>
-          <Grid item xs={12} md={6}>
-          <Card className={classes.familyImg} >
-            <CardMedia
-              className={classes.media}
-              component="img"
-              src={`${matches}` === 'true' ? family2 : family1}
-            />
-          </Card>
+          <Grid container item xs={12} md={6} spacing={1} wrap="wrap">
+            <ImgGallery tileData={tileData} />
           </Grid>
         </Grid>
-      </div>
-    </SectionContainer>
+      </SectionContainer>
+    </div>
   )
 }
 
