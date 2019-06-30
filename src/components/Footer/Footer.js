@@ -1,41 +1,33 @@
 import React, { useState } from "react"
-import {
-  Typography,
-  Grid,
-  Card,
-  CardMedia,
-} from "@material-ui/core"
-
+import { Typography, Grid, Card, CardMedia } from "@material-ui/core"
 import Donation from "./Donation"
-import Sitemap from "./SiteMap"
-import Visitus from "./Visit"
+import SiteMap from "./SiteMap"
+import Visit from "./Visit"
 import ipiLogo from "../../images/ipilogo.png"
 import PrivacyPolicy from "./PrivacyPolicy"
-import { makeStyles, createStyles } from "@material-ui/styles"
+import { makeStyles } from "@material-ui/styles"
 import DialogContainer from "../Shared/DialogContainer"
 import SectionContainer from "../Shared/SectionContainer"
 
-const useStyles = makeStyles(theme =>
-  createStyles({
-    root: {
-      backgroundColor: "#231E1F",
-      color: "#FEFEFE",
-    },
-    caption: {
-      color: "#7D7C7C",
-    },
-    card: {
-      width: "80%",
-      height: "auto",
-      margin: `0 auto`,
-      backgroundColor: "transparent",
-      border: "none",
-      boxShadow: "none",
-    },
-  })
-)
+const useStyles = makeStyles({
+  root: {
+    backgroundColor: "#231E1F",
+    color: "#FEFEFE",
+  },
+  caption: {
+    color: "#7D7C7C",
+  },
+  card: {
+    width: "80%",
+    height: "auto",
+    margin: `0 auto`,
+    backgroundColor: "transparent",
+    border: "none",
+    boxShadow: "none",
+  },
+})
 
-const Footer = props => {
+const Footer = () => {
   const classes = useStyles()
   const [status, setStatus] = useState(false)
 
@@ -53,7 +45,7 @@ const Footer = props => {
         <Grid container spacing={4}>
           <Grid item xs={6} sm={3}>
             <Typography variant="body1">Visit Us</Typography>
-            <Visitus />
+            <Visit />
           </Grid>
 
           <Grid item xs={6} sm={3}>
@@ -77,7 +69,7 @@ const Footer = props => {
 
           <Grid item xs={6} sm={3}>
             <Typography variant="body1">Site Map</Typography>
-            <Sitemap toggleModal={() => handleOpen()} />
+            <SiteMap toggleModal={() => handleOpen()} />
             <DialogContainer
               title="Privacy Policy"
               open={status}
