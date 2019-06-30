@@ -1,67 +1,94 @@
 import React from "react"
-import { makeStyles, createStyles } from "@material-ui/styles"
-import forestRoad from "../../images/hero-bg.jpg"
+import { makeStyles } from "@material-ui/styles"
+import ImageSlider from "../Shared/ImageSlider"
+import forestRoad from "../../images/heroe/forestroad.jpg"
+import lighthouse from "../../images/heroe/lighthouse.jpg"
+import { Card, CardContent, Button } from "@material-ui/core"
+import Typography from "@material-ui/core/Typography"
+import BlockQuote from "../Shared/BlockQuote"
 
-import { Card, CardMedia, CardContent, Typography } from "@material-ui/core"
-
-const useStyles = makeStyles(theme =>
-  createStyles({
-    card: {
-      borderRadius: 0,
-      boxShadow: "none",
-      position: "relative",
+const useStyles = makeStyles(theme => ({
+  card: {
+    borderRadius: 0,
+    boxShadow: "none",
+    height: "100vh",
+    backgroundColor: "#303D4D",
+    position: "relative",
+  },
+  content: {
+    position: "absolute",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    height: `calc(100vh - 92px)`,
+    paddingLeft: theme.spacing(4),
+    transform: `translate(-50%, -50%)`,
+    textAlign: "left",
+    color: "white",
+    opacity: "50%",
+    background: `linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+      )`,
+    width: "45%",
+    top: `57%`,
+    left: "22%",
+    [theme.breakpoints.down("sm")]: {
+      width: "70%",
+      left: "35%",
     },
-    content: {
-      color: "white",
+    [theme.breakpoints.down("xs")]: {
       width: "100%",
-      position: "absolute",
-      top: "35%",
-      padding: theme.spacing(8),
-      [theme.breakpoints.down("md")]: {
-        top: "30%",
-      },
-      [theme.breakpoints.down("sm")]: {
-        top: "25%",
-      },
+      left: "50%",
     },
-    scripture: {
-      fontSize: 38,
-      [theme.breakpoints.down("md")]: {
-        fontSize: 32,
-      },
-      [theme.breakpoints.down("sm")]: {
-        fontSize: 24,
-      },
-      [theme.breakpoints.down("xs")]: {
-        fontSize: 18,
-      },
-      citation: {},
+  },
+  heading: {
+    textTransform: "uppercase",
+    color: "white",
+  },
+  button: {
+    marginTop: theme.spacing(4),
+    width: 200,
+    color: "black",
+    backgroundColor: "#ffa000",
+    borderColor: "white",
+    "&:hover": {
+      color: "white",
     },
-  })
-)
+  },
+}))
 
 const Hero = () => {
   const classes = useStyles()
 
   return (
-    <Card className={classes.card}>
-      <CardMedia component="img" image={forestRoad} title="forest road" />
-      <CardContent className={classes.content}>
-        <Typography variant="h5" component="p" className={classes.scripture}>
-          And now these three remain:
-        </Typography>
-        <Typography variant="h5" component="p" className={classes.scripture}>
-          Faith, Hope and Love.
-        </Typography>
-        <Typography variant="h5" component="p" className={classes.scripture}>
-          But the greatest of these is Love.
-        </Typography>
-        <Typography variant="body1" component="p" className={classes.citation}>
-          1 Corinthians 13:13
-        </Typography>
-      </CardContent>
-    </Card>
+    <div className={classes.card}>
+      <Card className={classes.card}>
+        <ImageSlider
+          images={[lighthouse, forestRoad, lighthouse, forestRoad]}
+        />
+        <CardContent className={classes.content}>
+          <Typography
+            variant="h2"
+            gutterBottom={true}
+            className={classes.heading}
+          >
+            Sarasota
+          </Typography>
+          <Typography variant="h4" gutterBottom={true}>
+            Christian Fellowship
+          </Typography>
+          <BlockQuote
+            invert={true}
+            cite="1 Corinthians 13:13"
+            quote={`And now these three remain; Faith, Hope and Love. But the greatest of these is Love.`}
+          />
+          <Button variant="outlined" className={classes.button}>
+            Join us
+          </Button>
+        </CardContent>
+      </Card>
+    </div>
   )
 }
-
 export default Hero
