@@ -3,7 +3,11 @@ import PropTypes from "prop-types"
 import uuidv1 from "uuid"
 import { Link } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
-import { Link as GatsbyLink } from "gatsby"
+
+/*
+Current not using gatsby Link as there is no routing to other pages
+ */
+
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
@@ -38,8 +42,8 @@ const Menu = props => {
         <Link
           key={uuidv1()}
           className={classes.link}
-          component={item.external ? "button" : GatsbyLink}
-          variant="subtitle1"
+          component="a"
+          variant="button"
           to={item.external ? null : item.route}
           href={item.route}
           target={item.external ? "_blank" : null}
