@@ -79,7 +79,7 @@ const Hero = () => {
             Christian Fellowship
           </Typography>
           <BlockQuote
-            invert={true}
+            invert="true"
             cite="1 Corinthians 13:13"
             quote={`And now these three remain; Faith, Hope and Love. But the greatest of these is Love.`}
           />
