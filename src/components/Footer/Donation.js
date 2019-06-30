@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme =>
   })
 )
 
-const Donation = props => {
+const Donation = () => {
   const classes = useStyles()
   return (
     <div className={classes.root}>
@@ -21,6 +21,7 @@ const Donation = props => {
         If you would like to make a contribution to this ministry, click donate
         button.
       </Typography>
+      <br />
       <form
         className={classes.form}
         action="https://www.paypal.com/cgi-bin/webscr"
@@ -30,6 +31,7 @@ const Donation = props => {
         <input type="hidden" name="cmd" value="_s-xclick" />
         <input type="hidden" name="hosted_button_id" value="VMTY5YGFNPCRS" />
         <input
+          style={{ width: "80%" }}
           type="image"
           src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
           border="0"
