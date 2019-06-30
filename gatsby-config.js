@@ -9,6 +9,15 @@ module.exports = {
     `gatsby-plugin-sass`,
     { resolve: `gatsby-plugin-material-ui` },
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          { family: `Raleway`, variants: [`400`, `600`] },
+          { family: `Roboto Slab` },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
