@@ -5,35 +5,8 @@ import SectionHeading from "../Shared/SectionHeading"
 import { makeStyles, createStyles } from "@material-ui/styles"
 import { useTheme } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
-import zindlers from "../../images/ZindlerFamily.jpg"
-import mechams from "../../images/MeachamFamily.png"
-import chanti from "../../images/ChantiBoschetti.jpg"
-import family from "../../images/family.jpg"
-
+import { familyData } from "../../Api/family"
 import ImgGallery from "../Shared/ImgGallery"
-
-const tileData = [
-  {
-    img: family,
-    title: "Sarasota Chistian Fellowship",
-    author: "",
-  },
-  {
-    img: zindlers,
-    title: 'The Zindler Family"',
-    author: "",
-  },
-  {
-    img: mechams,
-    title: "The Mecham Family",
-    author: "",
-  },
-  {
-    img: chanti,
-    title: "Chanti Boschetti",
-    author: "",
-  },
-]
 
 const useStyles = makeStyles(theme =>
   createStyles({
@@ -41,6 +14,8 @@ const useStyles = makeStyles(theme =>
       flexGrow: 1,
       height: `calc(100vh - 92px)`,
       backgroundColor: "#FEFEFE",
+      display: "flex",
+      alignItems: "center",
       [theme.breakpoints.down("md")]: {
         height: "auto",
       },
@@ -58,6 +33,7 @@ const useStyles = makeStyles(theme =>
     },
     content: {
       maxWidth: 500,
+      color: theme.palette.text.secondary,
     },
     familyImg: {
       boxShadow: "none",
@@ -105,7 +81,7 @@ const Family = () => {
             </Grid>
           </Grid>
           <Grid container item xs={12} md={6} spacing={1} wrap="wrap">
-            <ImgGallery tileData={tileData} />
+            <ImgGallery tileData={familyData} />
           </Grid>
         </Grid>
       </SectionContainer>
