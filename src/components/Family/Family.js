@@ -5,7 +5,7 @@ import SectionHeading from "../Shared/SectionHeading"
 import { makeStyles, createStyles } from "@material-ui/styles"
 import { useTheme } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
-import { familyData } from "../../Api/family"
+import { familyData } from "../../Api/familyApi"
 import ImgGallery from "../Shared/ImgGallery"
 
 const useStyles = makeStyles(theme =>

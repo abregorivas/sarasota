@@ -1,38 +1,55 @@
 import React from "react"
-import { Button, Grid } from "@material-ui/core"
+import { Button, Grid, Typography } from "@material-ui/core"
 import SectionContainer from "../Shared/SectionContainer"
 import MissionLetter from "./MissionLetter"
-import { makeStyles, createStyles } from "@material-ui/styles"
-import Missions from "./Missions"
+import { makeStyles } from "@material-ui/styles"
 import DialogContainer from "../Shared/DialogContainer"
-import ImgCard from '../Shared/ImgCard'
+import ImgCard from "../Shared/ImgCard"
 import SectionHeading from "../Shared/SectionHeading"
+import BlockQuote from "../Shared/BlockQuote"
 
-const useStyles = makeStyles(theme =>
-  createStyles({
-    root: {
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1,
+    height: `calc(100vh - 92px)`,
+    display: "flex",
+    alignItems: "center",
+    [theme.breakpoints.down("sm")]: {
+      height: "auto",
     },
-    quote: {
-      color: theme.palette.text.secondary,
-      padding: theme.spacing(2),
-      paddingTop: 0,
-      paddingLeft: theme.spacing(10),
-      [theme.breakpoints.down("sm")]: {
-        height: "auto",
-      },
+  },
+  quote: {
+    color: theme.palette.text.secondary,
+    padding: theme.spacing(2),
+    paddingTop: 0,
+    paddingLeft: theme.spacing(10),
+    [theme.breakpoints.down("sm")]: {
+      height: "auto",
     },
-    citation: {
-      display: "block",
-      marginTop: theme.spacing(2),
-      color: theme.palette.text.primary,
+  },
+  citation: {
+    display: "block",
+    marginTop: theme.spacing(2),
+  },
+  content: {
+    maxWidth: 500,
+    color: theme.palette.text.secondary,
+    position: "relative",
+  },
+
+  button: {
+    border: `1px solid #F5B733`,
+    backgroundColor: "transparent",
+    fontWeight: "bold",
+    borderRadius: 0,
+    paddingRight: theme.spacing(3),
+    paddingLeft: theme.spacing(3),
+    marginTop: theme.spacing(2),
+    "&:hover": {
+      backgroundColor: "#F5B733",
     },
-    button: {
-      marginTop: theme.spacing(2),
-      marginBottom: theme.spacing(4),
-      marginLeft: theme.spacing(4),
-    },
-  })
-)
+  },
+}))
 
 const Mission = () => {
   const classes = useStyles()
@@ -41,24 +58,43 @@ const Mission = () => {
   const handleClose = () => setOpen(false)
 
   return (
-    <div className={classes.root}>
-      <SectionContainer id="mission">
+    <div className={classes.root} id="mission">
+      <SectionContainer>
         <Grid container spacing={4} alignItems="center">
-
-          <Grid item xs={12} md={6} className={classes.image}>
-            <ImgCard
-              imgSrc={"https://images.pexels.com/photos/6357/coffee-cup-desk-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"}
-/>
-          </Grid>
           <Grid item xs={12} md={6}>
-            <SectionHeading heading="Our Mission"
-                            subHeading="Love, Spiritual Foundation, Fellowship"
+            <ImgCard
+              imgSrc={
+                "https://images.pexels.com/photos/6357/coffee-cup-desk-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              }
             />
-            <Missions />
+          </Grid>
+          <Grid item xs={12} md={1} />
+          <Grid item xs={12} md={5}>
+            <SectionHeading
+              headings={["Our Mission"]}
+              subHeading="Love, Spiritual Foundation, Fellowship"
+            />
+            <Typography className={classes.content} variant="body2">
+              Sarasota Christian Fellowship is a non-denominational fellowship
+              with our roots in the Restoration movement. We strongly embrace
+              the scripture in
+              <em>1 John 4:11-12.</em>
+            </Typography>
+            <br />
+            <Typography className={classes.content} variant="body2">
+              Loving God is the motivation for everything we do in our Christian
+              walk, both in our relationships with one another and in our
+              personal lives.
+            </Typography>
+            <BlockQuote
+              cite="1 John 4:11-12"
+              quote={`Dear friends, since God so loved us, we also ought to love one
+            another. No one has ever seen God; but if we love one another, God
+            lives in us and his love is made complete in us.`}
+            />
             <Button
               className={classes.button}
-              color="primary"
-              variant="contained"
+              variant="outlined"
               onClick={handleClickOpen}
             >
               Learn More

@@ -1,11 +1,11 @@
 import React, { useState } from "react"
 import VisitCard from "./VisitCard"
 import GoogleMap from "../Shared/GoogleMap"
-import { visitusApi } from "../../Api/visitus"
+import { visitApi } from "../../Api/visitApi"
 import SectionContainer from "../Shared/SectionContainer"
 import SectionHeading from "../Shared/SectionHeading"
 import { makeStyles, useTheme } from "@material-ui/styles"
-import uuidv1 from "uuid"
+import uuid from "uuid"
 import { Grid, Modal } from "@material-ui/core"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 
@@ -78,8 +78,8 @@ const Visit = () => {
   }
 
   return (
-    <div className={classes.root}>
-      <SectionContainer id="visit">
+    <div className={classes.root} id="visit">
+      <SectionContainer>
         <Modal
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
@@ -93,8 +93,8 @@ const Visit = () => {
           <Grid item xs={12}>
             <SectionHeading headings={["Come Visit Us"]} />
           </Grid>
-          {visitusApi.map(item => (
-            <Grid item xs={12} sm={4} key={uuidv1()}>
+          {visitApi.map(item => (
+            <Grid item xs={12} sm={4} key={uuid()}>
               <VisitCard
                 img={item.imgSrc}
                 time={item.time}
