@@ -1,11 +1,11 @@
-import React from "React"
-import bibleStudy from "../images/visit/BibleStudy.jpg"
-import bibleReading from "../images/visit/BibleReading.jpeg"
+import React from "react"
+import bibleStudy from "../images/visit/bibleStudy.jpg"
+import bibleReading from "../images/visit/bibleReading.jpeg"
 import peopleGathered from "../images/visit/peopleGathered.jpg"
 import Email from "@material-ui/icons/Email"
 import Place from "@material-ui/icons/Place"
 
-export const visitusApi = [
+export const visitApi = [
   {
     title: "Church Service",
     venue: "St. Wilfreds Church",
