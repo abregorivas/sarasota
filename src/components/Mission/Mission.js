@@ -60,7 +60,7 @@ const Mission = () => {
   return (
     <div className={classes.root} id="mission">
       <SectionContainer>
-        <Grid container spacing={4} alignItems="center">
+        <Grid container spacing={8} alignItems="center">
           <Grid item xs={12} md={6}>
             <ImgCard
               imgSrc={
@@ -68,8 +68,7 @@ const Mission = () => {
               }
             />
           </Grid>
-          <Grid item xs={12} md={1} />
-          <Grid item xs={12} md={5}>
+          <Grid item xs={12} md={6}>
             <SectionHeading
               headings={["Our Mission"]}
               subHeading="Love, Spiritual Foundation, Fellowship"
