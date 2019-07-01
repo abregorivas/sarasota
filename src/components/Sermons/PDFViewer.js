@@ -7,31 +7,31 @@ import {
   Button,
   MobileStepper,
 } from "@material-ui/core"
-
-import { Document, Page } from "react-pdf"
+// import { Document, Page } from 'react-pdf/dist/entry.webpack';
+// import { Document, Page, pdfjs } from "react-pdf"
 import { makeStyles, useTheme } from "@material-ui/styles"
-import CircularProgress from "@material-ui/core/CircularProgress"
+// import CircularProgress from "@material-ui/core/CircularProgress"
 import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft"
 import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight"
 
+
 const useStyles = makeStyles({
-    card: {
-      borderRadius: 0,
-      boxShadow: "none",
-      overflow: "auto",
-      height: `calc(100vh - 200px)`
-    },
-    media: {},
-    progress: {
-      position: "relative",
-      top: 200,
-      left: 200,
-    },
-    root: {
-      background: '#eceff1'
-    }
-  }
-)
+  card: {
+    borderRadius: 0,
+    boxShadow: "none",
+    overflow: "auto",
+    height: `calc(100vh - 200px)`,
+  },
+  media: {},
+  progress: {
+    position: "relative",
+    top: 200,
+    left: 200,
+  },
+  root: {
+    background: "#eceff1",
+  },
+})
 
 const PDFViewer = props => {
   const classes = useStyles()
@@ -81,19 +81,7 @@ const PDFViewer = props => {
       />
       <Card className={classes.card}>
         <CardContent>
-          <Document
-            file={`sermons/pdf/${sermon.fileName}.pdf`}
-            renderMode="svg"
-            loading={
-              <CircularProgress disableShrink className={classes.progress} />
-            }
-          >
-            <Page
-              pageNumber={activeStep + 1}
-              scale={1.3}
-              loading="Please Wait"
-            />
-          </Document>
+
           <Typography>
             {activeStep + 1} of {sermon.pdfPages}
           </Typography>
@@ -108,6 +96,20 @@ PDFViewer.propTypes = {
 }
 
 export default PDFViewer
+// <Document
+// file={`sermons/pdf/${sermon.fileName}.pdf`}
+// renderMode="none"
+// loading={
+// <CircularProgress disableShrink className={classes.progress} />
+// }
+// >
+// <Page
+// pageNumber={activeStep + 1}
+// scale={1.3}
+// loading="Please Wait"
+//   />
+//   </Document>
+
 
 //  <CardActions disableSpacing color="primary">
 //         <IconButton aria-label="Add to favorites">
