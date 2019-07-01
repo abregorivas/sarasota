@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import CloseIcon from "@material-ui/icons/Close"
-import { makeStyles, createStyles } from "@material-ui/styles"
+import { makeStyles } from "@material-ui/styles"
 import {
   AppBar,
   Toolbar,
@@ -12,9 +12,21 @@ import {
   Slide,
 } from "@material-ui/core"
 
-const useStyles = makeStyles(theme =>
-  createStyles({ container: { marginTop: "80" } })
-)
+const useStyles = makeStyles(theme => ({
+  container: {
+    marginTop: "80",
+  },
+  title: {
+    marginLeft: theme.spacing(2),
+    textTransform: "uppercase",
+  },
+  appBar: {
+    zIndex: theme.zIndex.drawer + 1,
+  },
+  colorPrimary: {
+    color: theme.palette.secondary,
+  },
+}))
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />
@@ -32,12 +44,7 @@ const DialogContainer = props => {
     >
       <AppBar className={classes.appBar}>
         <Toolbar>
-          <IconButton
-            edge="start"
-            color="inherit"
-            onClick={handleClose}
-            aria-label="Close"
-          >
+          <IconButton edge="start" onClick={handleClose} aria-label="Close">
             <CloseIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
@@ -45,7 +52,9 @@ const DialogContainer = props => {
           </Typography>
         </Toolbar>
       </AppBar>
-      <Container className={classes.container}>{children}</Container>
+      <Container className={classes.container}>
+        <div>{children}</div>
+      </Container>
     </Dialog>
   )
 }
