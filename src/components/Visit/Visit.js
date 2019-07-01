@@ -47,8 +47,10 @@ const Visit = () => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.down("sm"))
   const handleOpen = x => {
-    setStatus(true)
-    setMap(x)
+    if (x) {
+      setStatus(true)
+      setMap(x)
+    }
   }
 
   const handleClose = status => {
