@@ -18,7 +18,7 @@ export const MainNavRoutes = [
   {
     route: "#internship",
     label: "Internship",
-    external: true,
+    external: false,
     icon: <BusinessCenter />,
   },
   { route: "#contact", label: "Contact", external: false, icon: <MailIcon /> },
