@@ -10,37 +10,43 @@ import {
   Container,
   Chip,
 } from "@material-ui/core"
-import { makeStyles, createStyles } from "@material-ui/styles"
+import { makeStyles } from "@material-ui/styles"
 import Send from "@material-ui/icons/Send"
 
-const useStyles = makeStyles(theme =>
-  createStyles({
-    container: {
-      display: "flex",
-      flexWrap: "wrap",
+const useStyles = makeStyles(theme => ({
+  container: {
+    display: "flex",
+    flexWrap: "wrap",
+  },
+  card: {
+    boxShadow: "none",
+    backgroundColor: "transparent",
+  },
+  textField: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    width: "100%",
+  },
+  chip: { margin: theme.spacing(1), fontSize: 12 },
+  button: {
+    lineHeight: "1rem",
+    border: `1px solid #5BABB5`,
+    backgroundColor: "transparent",
+    fontWeight: "bold",
+    borderRadius: 0,
+    paddingRight: theme.spacing(3),
+    paddingLeft: theme.spacing(3),
+    marginTop: theme.spacing(2),
+    "&:hover": {
+      backgroundColor: "#5BABB5",
+      color: "white",
     },
-    card: {
-      boxShadow: "none",
-      backgroundColor: "transparent",
-    },
-    textField: {
-      marginLeft: theme.spacing(1),
-      marginRight: theme.spacing(1),
-      width: "100%",
-    },
-    chip: { margin: theme.spacing(1), fontSize: 12 },
-    button: {
-      marginTop: theme.spacing(2),
-      marginLeft: theme.spacing(1),
-      lineHeight: "1rem",
-      width: 180,
-    },
-    sendIcon: {
-      marginLeft: theme.spacing(1),
-      width: "1rem",
-    },
-  })
-)
+  },
+  sendIcon: {
+    marginLeft: theme.spacing(1),
+    width: "1rem",
+  },
+}))
 
 const ContactForm = () => {
   const classes = useStyles()
@@ -108,7 +114,7 @@ const ContactForm = () => {
               </Grid>
             </Grid>
             <Button
-              variant="contained"
+              variant="outlined"
               color="primary"
               className={classes.button}
               type="submit"
