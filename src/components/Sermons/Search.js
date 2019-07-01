@@ -6,7 +6,7 @@ import sermonList from "../../Api/sermons"
 import AudioPlayer from "react-h5-audio-player"
 import SearchBar from "./SearchBar"
 import SermonList from "./SermonList"
-import PDFViewer from "./PDFViewer"
+// import PDFViewer from "./PDFViewer"
 import "./AudioPlayer.scss"
 import PDFMenu from "./PDFMenu"
 
@@ -111,7 +111,6 @@ const Search = props => {
               </Card>
             </Grid>
           </Grid>
-          {sermon.hasPdf ? <PDFViewer sermon={sermon} /> : null}
         </Grid>
       </Grid>
     </div>
@@ -119,3 +118,4 @@ const Search = props => {
 }
 
 export default Search
+          // {sermon.hasPdf ? <PDFViewer sermon={sermon} /> : null}
