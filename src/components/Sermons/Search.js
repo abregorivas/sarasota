@@ -1,10 +1,5 @@
 import React, { useState } from "react"
-import {
-  Avatar,
-  Card,
-  CardHeader,
-  Grid,
-} from "@material-ui/core"
+import { Avatar, Card, CardHeader, Grid } from "@material-ui/core"
 import escapeRegExp from "escape-string-regexp"
 import { makeStyles, createStyles } from "@material-ui/styles"
 import sermonList from "../../Api/sermons"
@@ -13,8 +8,7 @@ import SearchBar from "./SearchBar"
 import SermonList from "./SermonList"
 import PDFViewer from "./PDFViewer"
 import "./AudioPlayer.scss"
-
-import PDFMenu from './PDFMenu'
+import PDFMenu from "./PDFMenu"
 
 const useStyles = makeStyles(theme =>
   createStyles({
@@ -50,10 +44,9 @@ const useStyles = makeStyles(theme =>
     card: {
       borderRadius: 0,
       boxShadow: "none",
-
     },
     cardHeader: {
-      marginTop: theme.spacing(2)
+      marginTop: theme.spacing(2),
     },
     progress: {
       position: "relative",
@@ -62,11 +55,11 @@ const useStyles = makeStyles(theme =>
     },
     container: {
       marginTop: 64,
-      backgroundColor: "#eceff1"
+      backgroundColor: "#eceff1",
     },
     pdfContainer: {
-      backgroundColor: "#eceff1"
-    }
+      backgroundColor: "#eceff1",
+    },
   })
 )
 
@@ -75,6 +68,7 @@ const Search = props => {
   const classes = useStyles()
   const [sermons, setSermons] = useState(sermonList)
   const [sermon, setSermon] = useState(sermonList[0])
+
   const filterSearch = searchValue => {
     const match = new RegExp(escapeRegExp(searchValue), "i")
     let newList = sermonList.reduce((prev, cur) => {
@@ -92,11 +86,11 @@ const Search = props => {
     <div className={classes.root}>
       <SearchBar handleClose={handleClose} filterSearch={filterSearch} />
       <Grid container className={classes.container}>
-        <Grid item xs={5}  >
+        <Grid item xs={5}>
           <AudioPlayer src={`sermons/audio/${sermon.fileName}.mp3`} />
           <SermonList sermons={sermons} sermon={sermon} setSermon={setSermon} />
         </Grid>
-        <Grid item xs={7} >
+        <Grid item xs={7}>
           <Grid container item>
             <Grid item xs={12}>
               <Card className={classes.card}>
@@ -107,11 +101,13 @@ const Search = props => {
                       {sermon.author ? sermon.author[0].toUpperCase() : "G"}
                     </Avatar>
                   }
-                  action={
-                    <PDFMenu sermon={sermon}/>
-                  }
+                  action={<PDFMenu sermon={sermon} />}
                   title={sermon.title ? sermon.title : "No sermon selected"}
-                  subheader={sermon ? `${sermon.author} ${sermon.date}` : "Select a sermon from the list"}
+                  subheader={
+                    sermon
+                      ? `${sermon.author} ${sermon.date}`
+                      : "Select a sermon from the list"
+                  }
                 />
               </Card>
             </Grid>
@@ -119,7 +115,6 @@ const Search = props => {
           {sermon.hasPdf ? <PDFViewer sermon={sermon} /> : null}
         </Grid>
       </Grid>
-
     </div>
   )
 }
