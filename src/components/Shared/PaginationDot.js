@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import csx from "classNames"
+import clsx from "clsx"
 import { makeStyles } from "@material-ui/styles"
 
 const useStyles = makeStyles(theme => ({
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
 
 const PaginationDot = ({ index, active, handleClick }) => {
   const classes = useStyles()
-  let activeDot = csx(classes.dot, classes.active)
+  let activeDot = clsx(classes.dot, classes.active)
   return (
     <button
       type="button"
