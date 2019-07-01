@@ -1,13 +1,13 @@
 import React, { useState } from "react"
 import SectionContainer from "../Shared/SectionContainer"
-import { Avatar, Grid, Button, Slide, Dialog } from "@material-ui/core"
+import { Avatar, Grid, Button, Slide, Dialog, Typography } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 import Search from "./Search"
 import SectionHeading from "../Shared/SectionHeading"
 import Benefit from "./Benefit"
 import kenZindler from "../../images/kenZindler.jpg"
 import ProfileCard from "./ProfileCard"
-import Typography from "@material-ui/core/Typography"
+import microphone from '../../images/microphone.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -72,7 +72,7 @@ const Sermon = () => {
                   src={kenZindler}
                 />
               }
-              img="https://images.pexels.com/photos/2235/music-sound-communication-audio.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+              img={microphone}
             />
 
             <Dialog

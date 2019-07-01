@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { Avatar, Card, CardHeader, Grid } from "@material-ui/core"
 import escapeRegExp from "escape-string-regexp"
-import { makeStyles, createStyles } from "@material-ui/styles"
+import { makeStyles } from "@material-ui/styles"
 import sermonList from "../../Api/sermons"
 import AudioPlayer from "react-h5-audio-player"
 import SearchBar from "./SearchBar"
@@ -10,8 +10,7 @@ import PDFViewer from "./PDFViewer"
 import "./AudioPlayer.scss"
 import PDFMenu from "./PDFMenu"
 
-const useStyles = makeStyles(theme =>
-  createStyles({
+const useStyles = makeStyles(theme => ({
     root: {
       flexGrow: 1,
     },
