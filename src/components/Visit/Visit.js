@@ -20,16 +20,7 @@ const useStyles = makeStyles(theme => ({
       height: "auto",
     },
   },
-  paper: {
-    paddingTop: theme.spacing(8),
-    paddingBottom: theme.spacing(8),
-    textAlign: "left",
-    color: theme.palette.text.secondary,
-  },
-  title: {
-    fontSize: "12px",
-  },
-  card: {
+  modalCard: {
     position: "absolute",
     backgroundColor: theme.palette.background.paper,
     boxShadow: theme.shadows[5],
@@ -39,24 +30,12 @@ const useStyles = makeStyles(theme => ({
     left: `50%`,
     transform: `translate(-50%, -50%)`,
   },
-  media: {
+  modalMedia: {
     width: 600,
     height: 400,
-  },
-  link: {
-    margin: 8,
-    padding: `5px 16px`,
-    textTransform: "uppercase",
-    fontSize: "0.875rem",
-    textDecoration: "none",
-    borderStyle: "solid",
-    borderWidth: `1px`,
-    color: theme.palette.text.primary,
-    borderColor: theme.palette.primary.main,
-    "&:hover": {
-      textDecoration: "none",
-      backgroundColor: theme.palette.primary.main,
-      color: "white",
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 360,
+      maxHeight: 260,
     },
   },
 }))
