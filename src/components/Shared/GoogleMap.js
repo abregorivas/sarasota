@@ -6,7 +6,7 @@ class GoogleMap extends PureComponent {
   render() {
     const { url, classes } = this.props
     return (
-      <Card className={classes.card}>
+      <Card className={classes.modalCard}>
         <CardMedia
           className={classes.modalMedia}
           component="iframe"
