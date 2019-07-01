@@ -4,17 +4,22 @@ import { Card, CardMedia } from "@material-ui/core"
 
 class GoogleMap extends PureComponent {
   render() {
-    const { url, classes } = this.props;
+    const { url, classes } = this.props
     return (
       <Card className={classes.card}>
-        <CardMedia className={classes.media} component="iframe" image={url} />
+        <CardMedia
+          className={classes.modalMedia}
+          component="iframe"
+          image={url}
+        />
       </Card>
     )
   }
 }
 
 GoogleMap.propTypes = {
-  url:PropTypes.string,
+  url: PropTypes.string,
+  classes: PropTypes.object,
 }
 
 export default GoogleMap
