@@ -35,8 +35,8 @@ const Footer = () => {
     setStatus(true)
   }
 
-  const handleClose = status => {
-    setStatus(status)
+  const handleClose = () => {
+    setStatus(false)
   }
 
   return (
