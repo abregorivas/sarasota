@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Typography, Grid, Card, CardMedia } from "@material-ui/core"
+import { Typography, Grid, Card, CardMedia, Divider } from "@material-ui/core"
 import Donation from "./Donation"
 import SiteMap from "./SiteMap"
 import Visit from "./Visit"
@@ -11,7 +11,7 @@ import SectionContainer from "../Shared/SectionContainer"
 
 const useStyles = makeStyles({
   root: {
-    backgroundColor: "#231E1F",
+    backgroundColor: "#1e1c27",
     color: "#FEFEFE",
   },
   caption: {
@@ -79,6 +79,10 @@ const Footer = () => {
             </DialogContainer>
           </Grid>
         </Grid>
+        <Divider light={true} />
+        <Typography variant="overline">
+          &copy; Copyright: 2019 Perfect Paradox | All rights reserved
+        </Typography>
       </SectionContainer>
     </div>
   )
