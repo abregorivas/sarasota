@@ -44,9 +44,7 @@ const ImageGallery = ({ tileData }) => {
             <img src={tile.img} alt={tile.title} />
             <GridListTileBar
               title={tile.title}
-              subtitle={
-                <span> {tile.author ? `by: ${tile.author}` : null}</span>
-              }
+              subtitle={<span> {tile.content ? `${tile.content}` : null}</span>}
             />
           </GridListTile>
         ))}
