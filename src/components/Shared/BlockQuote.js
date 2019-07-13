@@ -26,9 +26,9 @@ const useStyles = makeStyles(theme => ({
   },
 }))
 
-const BlockQuote = props => {
+const BlockQuote = ({quote, cite, invert}) => {
   const classes = useStyles()
-  let { quote, cite, invert } = props
+
 
   return (
     <React.Fragment>
