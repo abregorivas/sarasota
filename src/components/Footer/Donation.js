@@ -1,6 +1,7 @@
 import React from "react"
 import { Typography } from "@material-ui/core"
 import { makeStyles, createStyles } from "@material-ui/styles"
+import donationLogo from '../../images/DonationLogo.png'
 
 const useStyles = makeStyles(theme =>
   createStyles({
@@ -33,7 +34,8 @@ const Donation = () => {
         <input
           style={{ width: "80%" }}
           type="image"
-          src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+          // src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+          src={donationLogo}
           border="0"
           name="submit"
           title="PayPal - The safer, easier way to pay online!"
