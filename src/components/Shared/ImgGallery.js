@@ -35,7 +35,7 @@ const ImageGallery = ({ tileData }) => {
   return (
     <div className={classes.root}>
       <GridList
-        cellHeight={230}
+        cellHeight={156}
         className={classes.gridList}
         cols={breakPointXs ? 2 : breakPointSm ? 3 : 2}
       >
