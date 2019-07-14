@@ -12,9 +12,9 @@ import microphone from '../../images/microphone.jpg'
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    height: `calc(100vh - 92px)`,
     display: "flex",
     alignItems: "center",
+    backgroundColor: '#F8F8F8',
     [theme.breakpoints.down("sm")]: {
       height: "auto",
     },
@@ -35,7 +35,7 @@ const useStyles = makeStyles(theme => ({
   },
   button: {
     border: `1px solid #F5B733`,
-    backgroundColor: "transparent",
+    backgroundColor: "white",
     fontWeight: "bold",
     borderRadius: 0,
     paddingRight: theme.spacing(3),
@@ -88,10 +88,12 @@ const Sermon = () => {
           <Grid item xs={12} md={6}>
             <SectionHeading headings={["Audio For", "The Soul"]}>
               <Typography variant="body2" className={classes.content}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                dicta dolorem doloremque eos facilis molestiae nulla sed sequi?
-                Aliquam ducimus eum eveniet expedita iure labore mollitia nemo
-                neque quae similique?
+                We are making our weekly sermons, along with the PDF notes (to follow along with the sermon)
+                available to the general public. For those in the ministry, the sermon notes are not copyrighted so
+                you are free to download the outlines and use them any way you choose. Our goal in providing
+                these services is to further spread the gospel of Jesus (free of charge). We hope that these lessons
+                will strengthen your spiritual walk and provide solid, doctrinal guidance for all those seeking to
+                draw closer to the Lord.
               </Typography>
             </SectionHeading>
             <br />

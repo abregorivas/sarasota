@@ -7,13 +7,12 @@ import { useTheme } from "@material-ui/core/styles"
 import useMediaQuery from "@material-ui/core/useMediaQuery"
 import { familyData } from "../../Api/familyApi"
 import ImgGallery from "../Shared/ImgGallery"
+import BlockQuote from '../Shared/BlockQuote'
 
 const useStyles = makeStyles(theme =>
   createStyles({
     root: {
       flexGrow: 1,
-      height: `calc(100vh - 92px)`,
-      backgroundColor: "#FEFEFE",
       display: "flex",
       alignItems: "center",
       [theme.breakpoints.down("md")]: {
@@ -64,23 +63,20 @@ const Family = () => {
             <SectionHeading headings={["Love Is", "Our Glue"]} />
             <Grid item xs={12} md={11}>
               <Typography className={classes.content} variant="body2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-                autem, beatae consectetur deserunt excepturi, expedita hic illo
-                laudantium libero maiores minima modi mollitia
+                Here at the Sarasota Christian Fellowship we believe that family is a priority. We also recognize
+                that our fellowship is a very important family. Jesus responded to his critics regarding the
+                importance of his spiritual family:
               </Typography>
-              <br />
-              <Typography className={classes.content} variant="body2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi,
-                autem, beatae consectetur deserunt excepturi, expedita hic illo
-                laudantium libero maiores minima modi mollitia
-              </Typography>
-              <br />
-              <Button className={classes.button} variant="outlined">
-                Read Bios
-              </Button>
+            <BlockQuote quote={`A crowd was sitting around him, and they told him, "Your
+mother and brothers are outside looking for you." "Who are my mother and my brothers?" he
+asked. Then he looked at those seated in a circle around him and said, "Here are my mother and
+my brothers! Whoever does God's will is my brother and sister and mother."`}
+            cite="Mark 3:32-35"
+            />
+
             </Grid>
           </Grid>
-          <Grid container item xs={12} md={6} spacing={1} wrap="wrap">
+          <Grid item xs={12} md={6} spacing={1} wrap="wrap">
             <ImgGallery tileData={familyData} />
           </Grid>
         </Grid>
