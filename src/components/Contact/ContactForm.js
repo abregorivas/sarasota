@@ -19,8 +19,10 @@ const useStyles = makeStyles(theme => ({
     flexWrap: "wrap",
   },
   card: {
-    boxShadow: "none",
-    backgroundColor: "transparent",
+    backgroundColor: "white",
+    boxShadow: `0 10px 30px rgba(0, 0, 0, 0.1)`,
+    border: `1px solid transparent`,
+    padding: theme.spacing(2),
   },
   textField: {
     marginLeft: theme.spacing(1),

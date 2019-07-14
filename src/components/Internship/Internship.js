@@ -20,7 +20,6 @@ import Campus from "./Campus"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    height: `calc(100vh - 92px)`,
     backgroundColor: "#FEFEFE",
     display: "flex",
     alignItems: "center",

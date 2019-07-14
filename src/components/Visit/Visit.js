@@ -12,10 +12,8 @@ import useMediaQuery from "@material-ui/core/useMediaQuery"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    height: `calc(100vh - 92px)`,
     display: "flex",
     alignItems: "center",
-    backgroundColor: "#FEFEFE",
     [theme.breakpoints.down("sm")]: {
       height: "auto",
     },

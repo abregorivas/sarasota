@@ -11,9 +11,9 @@ import BlockQuote from "../Shared/BlockQuote"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    height: `calc(100vh - 92px)`,
     display: "flex",
     alignItems: "center",
+    backgroundColor: '#F8F8F8',
     [theme.breakpoints.down("sm")]: {
       height: "auto",
     },
@@ -39,7 +39,7 @@ const useStyles = makeStyles(theme => ({
 
   button: {
     border: `1px solid #F5B733`,
-    backgroundColor: "transparent",
+    backgroundColor: "white",
     fontWeight: "bold",
     borderRadius: 0,
     paddingRight: theme.spacing(3),
@@ -73,13 +73,12 @@ const Mission = () => {
               headings={["Our Mission"]}
               subHeading="Love, Spiritual Foundation, Fellowship"
             />
-            <Typography className={classes.content} variant="body2">
+            <Typography className={classes.content} variant="body2" gutterBottom={true}>
               Sarasota Christian Fellowship is a non-denominational fellowship
               with our roots in the Restoration movement. We strongly embrace
               the scripture in
               <em>1 John 4:11-12.</em>
             </Typography>
-            <br />
             <Typography className={classes.content} variant="body2">
               Loving God is the motivation for everything we do in our Christian
               walk, both in our relationships with one another and in our

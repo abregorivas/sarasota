@@ -14,11 +14,9 @@ const useStyles = makeStyles(theme => ({
   root: {
     paddingBottom: theme.spacing(3),
     borderRadius: 0,
-    backgroundColor: "#f3f1ef",
-    "&:hover": {
-      boxShadow: `0 10px 30px rgba(0, 0, 0, 0.1)`,
-      border: `1px solid transparent`,
-    },
+    boxShadow: `0 10px 30px rgba(0, 0, 0, 0.1)`,
+    border: `1px solid transparent`,
+    backgroundColor: "white",
   },
   actions: {
     padding: 0,

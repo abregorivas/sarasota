@@ -9,8 +9,7 @@ import { Card, CardHeader, CardMedia, Grid } from "@material-ui/core"
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    height: `calc(100vh - 92px)`,
-    backgroundColor: "#FEFEFE",
+    backgroundColor: "#f8f8f8",
     display: "flex",
     alignItems: "center",
     [theme.breakpoints.down("md")]: {
