@@ -1,0 +1,13 @@
+.react-h5-audio-player {
+  height: 72px;
+}
+.react-h5-audio-player .flex {
+  box-shadow: none !important;
+  background-color: #003539 !important;
+}
+.react-h5-audio-player .flex .progress-bar-wrapper .indicator {
+  opacity: 1 !important;
+}
+.react-h5-audio-player .flex .progress-bar-wrapper .audio-info {
+  color: white;
+}
