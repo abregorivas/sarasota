@@ -1,8 +1,4 @@
 import React from 'react';
-import SectionContainer from '../common/SectionContainer';
-import SectionHeading from '../common/SectionHeading';
-import intershipImg from '../../assets/images/Internship.jpeg';
-import DialogContainer from '../common/DialogContainer';
 import {
   Grid,
   Button,
@@ -14,7 +10,11 @@ import { makeStyles } from '@material-ui/styles';
 import ImgCard from '../common/ImgCard';
 import { useTheme } from '@material-ui/core/styles';
 import RequirementList from './RequirementsList';
-import { requirements } from '../../Api/internship';
+import SectionContainer from '../common/SectionContainer';
+import SectionHeading from '../common/SectionHeading';
+import intershipImg from '../../assets/images/Internship.jpeg';
+import DialogContainer from '../common/DialogContainer';
+import { requirements } from '../../api/internship';
 import Campus from './Campus';
 
 const useStyles = makeStyles(theme => ({
@@ -69,7 +69,7 @@ const Internship = () => {
             <Typography
               className={classes.content}
               variant="body2"
-              gutterBottom={true}
+              gutterBottom
             >
               The goal of this internship program is to train a young man in the
               fundamentals of ministry&#44; and give him a realistic perspective
