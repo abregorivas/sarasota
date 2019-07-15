@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="26b65573-be99-4ec2-9f26-5725d668ce4d" name="Default Changelist" comment="change img ref and remove createStyles">
+      <change afterPath="$PROJECT_DIR$/static/pdf.worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Family/Family.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Family/Family.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/PDFViewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/PDFViewer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/Sermon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/Sermon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/SermonList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/SermonList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/page-2.js" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="sarasota" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>winHeight</find>
+      <find>label</find>
+      <find>wrap</find>
+      <find>*</find>
+      <find>content</find>
+      <find>visit</find>
+      <find>picture</find>
+      <find>theme</find>
+      <find>logo</find>
+      <find>button</find>
+      <find>icon</find>
+      <find>container</find>
+      <find>Disclosure of d</find>
+      <find>paper</find>
+      <find>title</find>
+      <find>media</find>
+      <find>card</find>
+      <find>link</find>
+      <find>text</find>
+      <find>Transition</find>
+      <find>tip</find>
+      <find>heading</find>
+      <find>listItem</find>
+      <find>drawer</find>
+      <find>blood</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/components/Shared/Carousel/Carousel.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/MainNav.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/Sidebar.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/Brand.js" />
+        <option value="$PROJECT_DIR$/src/components/Shared/SectionContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/Mission/Missions.js" />
+        <option value="$PROJECT_DIR$/src/components/Mission/MissionLetter.js" />
+        <option value="$PROJECT_DIR$/src/components/Visit/VisitCard.js" />
+        <option value="$PROJECT_DIR$/src/Api/campus.js" />
+        <option value="$PROJECT_DIR$/src/components/Sermons/Sermons.js" />
+        <option value="$PROJECT_DIR$/src/Api/family.js" />
+        <option value="$PROJECT_DIR$/src/components/Navigation/Menu.js" />
+        <option value="$PROJECT_DIR$/src/components/Sermons/Benefits.js" />
+        <option value="$PROJECT_DIR$/src/components/Internship/Requirements.js" />
+        <option value="$PROJECT_DIR$/src/Api/visitus.js" />
+        <option value="$PROJECT_DIR$/src/Api/familyApi.js" />
+        <option value="$PROJECT_DIR$/src/components/Visit/VisitCardAlt.js" />
+        <option value="$PROJECT_DIR$/src/Api/visitApi.js" />
+        <option value="$PROJECT_DIR$/src/components/seo.js" />
+        <option value="$PROJECT_DIR$/src/components/Sermons/Benefit.js" />
+        <option value="$PROJECT_DIR$/src/components/Shared/SectionHeading.js" />
+        <option value="$PROJECT_DIR$/src/Api/navigation.js" />
+        <option value="$PROJECT_DIR$/src/components/Shared/DialogContainer.js" />
+        <option value="$PROJECT_DIR$/src/components/Internship/Campus.js" />
+        <option value="$PROJECT_DIR$/src/components/Shared/ImageSlider.js" />
+        <option value="$PROJECT_DIR$/src/components/Shared/ImgCard.js" />
+        <option value="$PROJECT_DIR$/src/components/Shared/PaginationDot.js" />
+        <option value="$PROJECT_DIR$/src/components/Footer/Footer.js" />
+        <option value="$PROJECT_DIR$/src/components/Footer/PrivacyPolicy.js" />
+        <option value="$PROJECT_DIR$/src/components/Shared/GoogleMap.js" />
+        <option value="$PROJECT_DIR$/src/components/Internship/Requirement.js" />
+        <option value="$PROJECT_DIR$/src/components/Internship/RequirementsList.js" />
+        <option value="$PROJECT_DIR$/src/theme.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/report.20190630.234212.80118.0.001.json" />
+        <option value="$PROJECT_DIR$/src/pages/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Shared/BlockQuote.js" />
+        <option value="$PROJECT_DIR$/src/components/Footer/Donation.js" />
+        <option value="$PROJECT_DIR$/src/components/Shared/ImgGallery.js" />
+        <option value="$PROJECT_DIR$/src/components/Hero/Hero.js" />
+        <option value="$PROJECT_DIR$/src/components/Visit/Visit.js" />
+        <option value="$PROJECT_DIR$/src/components/Contact/Contact.js" />
+        <option value="$PROJECT_DIR$/src/components/Contact/ContactForm.js" />
+        <option value="$PROJECT_DIR$/src/components/Internship/Internship.js" />
+        <option value="$PROJECT_DIR$/src/components/Mission/Mission.js" />
+        <option value="$PROJECT_DIR$/src/components/Sermons/ProfileCard.js" />
+        <option value="$PROJECT_DIR$/src/components/Sermons/Sermon.js" />
+        <option value="$PROJECT_DIR$/src/components/Sermons/Search.js" />
+        <option value="$PROJECT_DIR$/src/components/Sermons/SermonList.js" />
+        <option value="$PROJECT_DIR$/src/components/Family/Family.js" />
+        <option value="$PROJECT_DIR$/src/components/Sermons/PDFViewer.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/sarasota.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+        <option value="$PROJECT_DIR$/.idea/vagrant.xml" />
+        <option value="$PROJECT_DIR$/.idea/dictionaries/RolandAbrego.xml" />
+        <option value="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="42" />
+    <option name="y" value="23" />
+    <option name="width" value="1398" />
+    <option name="height" value="814" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="sarasota" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sarasota" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="11.7.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/local/bin/node" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/src/components/Shared/Carousel" />
+      <recent name="$PROJECT_DIR$/static/images" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26b65573-be99-4ec2-9f26-5725d668ce4d" name="Default Changelist" comment="" />
+      <created>1560530582058</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560530582058</updated>
+      <workItem from="1560530584681" duration="178000" />
+      <workItem from="1560530915185" duration="1556000" />
+      <workItem from="1560533065037" duration="8000" />
+      <workItem from="1560821282944" duration="97000" />
+      <workItem from="1560981892701" duration="837000" />
+      <workItem from="1560982939102" duration="99000" />
+      <workItem from="1560983057899" duration="17738000" />
+      <workItem from="1561057616677" duration="268000" />
+      <workItem from="1561063268363" duration="12608000" />
+      <workItem from="1561084643506" duration="10510000" />
+      <workItem from="1561346354374" duration="3000" />
+      <workItem from="1561592381275" duration="61902000" />
+      <workItem from="1561752989803" duration="41432000" />
+      <workItem from="1561839098493" duration="49662000" />
+      <workItem from="1561945870409" duration="5803000" />
+      <workItem from="1561954612424" duration="15366000" />
+      <workItem from="1562642331583" duration="217000" />
+      <workItem from="1562642593456" duration="176000" />
+      <workItem from="1563049463431" duration="16657000" />
+      <workItem from="1563077269893" duration="233000" />
+    </task>
+    <task id="LOCAL-00051" summary="fix mission grid remove empty column">
+      <created>1561886332885</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1561886332885</updated>
+    </task>
+    <task id="LOCAL-00052" summary="add styles to Mission Letter">
+      <created>1561886380931</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1561886380931</updated>
+    </task>
+    <task id="LOCAL-00053" summary="update navigation API">
+      <created>1561886410333</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1561886410333</updated>
+    </task>
+    <task id="LOCAL-00054" summary="fix prop make string vs bool">
+      <created>1561886966951</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1561886966951</updated>
+    </task>
+    <task id="LOCAL-00055" summary="enlarge donation img">
+      <created>1561887306543</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1561887306544</updated>
+    </task>
+    <task id="LOCAL-00056" summary="update comp names">
+      <created>1561887410312</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1561887410312</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Refactor Campus Comp">
+      <created>1561955384041</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1561955384042</updated>
+    </task>
+    <task id="LOCAL-00058" summary="update images reorg folders">
+      <created>1561955560126</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1561955560126</updated>
+    </task>
+    <task id="LOCAL-00059" summary="remove unnecessary images">
+      <created>1561955758781</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1561955758781</updated>
+    </task>
+    <task id="LOCAL-00060" summary="update contact section">
+      <created>1561955943485</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1561955943485</updated>
+    </task>
+    <task id="LOCAL-00061" summary="update Footer copyright &amp; styles">
+      <created>1561956179176</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1561956179176</updated>
+    </task>
+    <task id="LOCAL-00062" summary="add proptypes &amp; formating">
+      <created>1561956268324</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1561956268324</updated>
+    </task>
+    <task id="LOCAL-00063" summary="update styles DialogComponent">
+      <created>1561956483129</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1561956483129</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Add Image Slider">
+      <created>1561956531587</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1561956531587</updated>
+    </task>
+    <task id="LOCAL-00065" summary="update styles imgCard">
+      <created>1561956651635</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1561956651635</updated>
+    </task>
+    <task id="LOCAL-00066" summary="auto format fix">
+      <created>1561956699273</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1561956699273</updated>
+    </task>
+    <task id="LOCAL-00067" summary="update external prop valu on internship">
+      <created>1561956744834</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1561956744834</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Update styles/layout on Internship">
+      <created>1561958113216</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1561958113217</updated>
+    </task>
+    <task id="LOCAL-00069" summary="change order on Index page">
+      <created>1561958158718</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1561958158718</updated>
+    </task>
+    <task id="LOCAL-00070" summary="fix handleClose function">
+      <created>1561959040800</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1561959040800</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Update Privacy Policy">
+      <created>1561959072919</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1561959072919</updated>
+    </task>
+    <task id="LOCAL-00072" summary="add clsx remove classnames">
+      <created>1561959119611</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1561959119611</updated>
+    </task>
+    <task id="LOCAL-00073" summary="update styles in search component">
+      <created>1561959236384</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1561959236384</updated>
+    </task>
+    <task id="LOCAL-00074" summary="update classname">
+      <created>1561959736655</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1561959736655</updated>
+    </task>
+    <task id="LOCAL-00075" summary="remove excess style rules from Visit comp">
+      <created>1561959794544</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1561959794544</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Add Profile Card">
+      <created>1561959859699</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1561959859699</updated>
+    </task>
+    <task id="LOCAL-00077" summary="rename Requirements Component">
+      <created>1561959950012</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1561959950013</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Rename Sermons and remove excess style rules">
+      <created>1561960192848</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1561960192848</updated>
+    </task>
+    <task id="LOCAL-00079" summary="update formating on SectionContainer comp">
+      <created>1561960592192</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1561960592192</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Add bullet point to RequirementsList">
+      <created>1561960816444</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1561960816444</updated>
+    </task>
+    <task id="LOCAL-00081" summary="update theme styles">
+      <created>1561960884086</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1561960884086</updated>
+    </task>
+    <task id="LOCAL-00082" summary="add Hero Images">
+      <created>1561961185724</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1561961185724</updated>
+    </task>
+    <task id="LOCAL-00083" summary="add Visit comp images">
+      <created>1561961209781</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1561961209781</updated>
+    </task>
+    <task id="LOCAL-00084" summary="add Family comp images">
+      <created>1561961343669</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1561961343669</updated>
+    </task>
+    <task id="LOCAL-00085" summary="add campus comp images">
+      <created>1561961584106</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1561961584106</updated>
+    </task>
+    <task id="LOCAL-00086" summary="add new images">
+      <created>1561961891291</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1561961891291</updated>
+    </task>
+    <task id="LOCAL-00087" summary="remove old benefits component">
+      <created>1561962137067</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1561962137067</updated>
+    </task>
+    <task id="LOCAL-00088" summary="update packages &amp; update gitignore">
+      <created>1561962245821</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1561962245821</updated>
+    </task>
+    <task id="LOCAL-00089" summary="fix handleOpen fn on Visit Comp">
+      <created>1561962642302</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1561962642302</updated>
+    </task>
+    <task id="LOCAL-00090" summary="update versions on packages">
+      <created>1561970971801</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1561970971802</updated>
+    </task>
+    <task id="LOCAL-00091" summary="change img ref and remove createStyles">
+      <created>1561971043927</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1561971043927</updated>
+    </task>
+    <task id="LOCAL-00092" summary="update package.json.lock">
+      <created>1561971163657</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1561971163657</updated>
+    </task>
+    <task id="LOCAL-00093" summary="remove PDFViewer from Search">
+      <created>1561971620311</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1561971620311</updated>
+    </task>
+    <task id="LOCAL-00094" summary="remove PDFviewer from Search">
+      <created>1561971644160</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1561971644160</updated>
+    </task>
+    <task id="LOCAL-00095" summary="destructure props in args BlockQuote comp">
+      <created>1563053528146</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1563053528148</updated>
+    </task>
+    <task id="LOCAL-00096" summary="ImgGallery set height to equal smallest img">
+      <created>1563053579409</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1563053579410</updated>
+    </task>
+    <task id="LOCAL-00097" summary="add new Donation log design">
+      <created>1563053675660</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1563053675660</updated>
+    </task>
+    <task id="LOCAL-00098" summary="add Kens content copy">
+      <created>1563063855600</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1563063855600</updated>
+    </task>
+    <task id="LOCAL-00099" summary="update styles">
+      <created>1563063878954</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1563063878954</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="235350000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.37064222" visible="true" weight="0.26180258" />
+      <window_info id="TODO" order="1" sideWeight="0.45141453" side_tool="true" weight="0.20436928" />
+      <window_info id="Structure" order="2" sideWeight="0.45141453" side_tool="true" weight="0.20436928" />
+      <window_info id="npm" order="3" sideWeight="0.45387453" side_tool="true" weight="0.18111347" />
+      <window_info id="Favorites" order="4" sideWeight="0.45141453" side_tool="true" weight="0.20436928" />
+      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49785408" weight="0.3296433" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49785408" weight="0.3296433" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49499285" weight="0.3296433" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.50500715" side_tool="true" visible="true" weight="0.24108241" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3296433" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="3" sideWeight="0.499385" weight="0.32904148" />
+      <window_info anchor="right" id="Terminal" order="4" sideWeight="0.47851002" visible="true" weight="0.46924177" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remove excess style rules from Visit comp" />
+    <MESSAGE value="Add Profile Card" />
+    <MESSAGE value="rename Requirements Component" />
+    <MESSAGE value="Rename Sermons and remove excess style rules" />
+    <MESSAGE value="update formating on SectionContainer comp" />
+    <MESSAGE value="Add bullet point to RequirementsList" />
+    <MESSAGE value="update theme styles" />
+    <MESSAGE value="add Hero Images" />
+    <MESSAGE value="add Visit comp images" />
+    <MESSAGE value="add Family comp images" />
+    <MESSAGE value="add campus comp images" />
+    <MESSAGE value="add new images" />
+    <MESSAGE value="remove old benefits component" />
+    <MESSAGE value="update packages &amp; update gitignore" />
+    <MESSAGE value="fix handleOpen fn on Visit Comp" />
+    <MESSAGE value="update versions on packages" />
+    <MESSAGE value="change img ref and remove createStyles" />
+    <MESSAGE value="update package.json.lock" />
+    <MESSAGE value="remove PDFViewer from Search" />
+    <MESSAGE value="remove PDFviewer from Search" />
+    <MESSAGE value="destructure props in args BlockQuote comp" />
+    <MESSAGE value="ImgGallery set height to equal smallest img" />
+    <MESSAGE value="add new Donation log design" />
+    <MESSAGE value="add Kens content copy" />
+    <MESSAGE value="update styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="update styles" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/DialogContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Layout/App.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/ImgCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="2" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/Pagination.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/ImageSlider.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-596">
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/PaginationDot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="23" lean-forward="true" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/PrivacyPolicy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="293" column="28" selection-start-line="293" selection-start-column="28" selection-end-line="293" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/GoogleMap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Internship/Requirement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/SectionContainer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-209">
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Internship/RequirementsList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="21" column="2" lean-forward="true" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/family/ZindlerFamily.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/images/scf-logo-lg copy.png" />
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/Carousel.js" />
+    <entry file="file://$PROJECT_DIR$/src/components/Visit/VisitCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-376">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Api/visitApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sermons/PDFMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report.20190630.234212.80118.0.001.json" />
+    <entry file="file://$PROJECT_DIR$/report.20190701.002026.82291.0.001.json" />
+    <entry file="file://$PROJECT_DIR$/public/icons/icon-48x48.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/pdf.worker.entry.js" />
+    <entry file="file://$PROJECT_DIR$/static/pdf.worker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-25340" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/pdf.worker.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/layout.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/BlockQuote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-614">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Footer/Donation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Shared/ImgGallery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Api/familyApi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Visit/Visit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Mission/Mission.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="44" column="27" selection-start-line="44" selection-start-column="22" selection-end-line="44" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#1979#2116#0" />
+            <element signature="e#2129#2438#0" />
+            <element signature="e#2470#2737#0" />
+            <element signature="e#2750#3039#0" />
+            <element signature="e#3052#3234#0" />
+            <element signature="e#3248#3455#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Hero/Hero.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contact/ContactForm.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-46">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Contact/Contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#979#1648#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Internship/Internship.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sermons/ProfileCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/theme.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sermons/AudioPlayer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-pdf/dist/entry.parcel.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-pdf/dist/entry.webpack.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/react-pdf/dist/entry.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report.20190713.192103.43752.0.001.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1941" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sermons/PDFViewer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3056">
+          <caret line="191" selection-start-line="191" selection-end-line="191" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#3642#3683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Api/sermons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5216">
+          <caret line="326" column="4" selection-start-line="326" selection-start-column="4" selection-end-line="326" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sermons/SermonList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sermons/SearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sermons/Search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Family/Family.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Sermons/Sermon.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

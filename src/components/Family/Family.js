@@ -76,7 +76,7 @@ my brothers! Whoever does God's will is my brother and sister and mother."`}
 
             </Grid>
           </Grid>
-          <Grid item xs={12} md={6} spacing={1} wrap="wrap">
+          <Grid container item xs={12} md={6} spacing={1} wrap="wrap">
             <ImgGallery tileData={familyData} />
           </Grid>
         </Grid>

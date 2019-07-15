@@ -19,6 +19,7 @@ const useStyles = makeStyles(theme =>
     title: {
       flexGrow: 1,
       display: "none",
+
       [theme.breakpoints.up("md")]: {
         display: "block",
       },
@@ -29,7 +30,14 @@ const useStyles = makeStyles(theme =>
       position: "relative",
       overflow: "auto",
       height: `calc(100vh - 132px)`,
-      padding: 0
+      padding: 0,
+    },
+    // may want to pull this out to separate style to reuse root
+      root: {
+        width: "150px",
+        whiteSpace: "nowrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis",
     },
     input: {
       display: 'none'
@@ -79,6 +87,7 @@ const SermonList = props => {
             <ListItemText
               primary={item.title}
               onClick={() => setSermon(item)}
+              className={classes.root}
             />
           </ListItem>
         ))}

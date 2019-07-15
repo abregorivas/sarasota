@@ -6,9 +6,11 @@ import sermonList from "../../Api/sermons"
 import AudioPlayer from "react-h5-audio-player"
 import SearchBar from "./SearchBar"
 import SermonList from "./SermonList"
-// import PDFViewer from "./PDFViewer"
+import PDFViewer from "./PDFViewer"
 import "./AudioPlayer.scss"
 import PDFMenu from "./PDFMenu"
+import { useTheme } from "@material-ui/core/styles"
+import useMediaQuery from "@material-ui/core/useMediaQuery"
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -67,6 +69,8 @@ const Search = props => {
   const classes = useStyles()
   const [sermons, setSermons] = useState(sermonList)
   const [sermon, setSermon] = useState(sermonList[0])
+  const theme = useTheme()
+  const matches = useMediaQuery(theme.breakpoints.down("sm"))
 
   const filterSearch = searchValue => {
     const match = new RegExp(escapeRegExp(searchValue), "i")
@@ -84,12 +88,13 @@ const Search = props => {
   return (
     <div className={classes.root}>
       <SearchBar handleClose={handleClose} filterSearch={filterSearch} />
-      <Grid container className={classes.container}>
-        <Grid item xs={5}>
+      <Grid container className={classes.container}
+            direction={`${matches}` === "true" ? "column-reverse" : "row"}>
+        <Grid item xs={12} md={5}>
           <AudioPlayer src={`sermons/audio/${sermon.fileName}.mp3`} />
           <SermonList sermons={sermons} sermon={sermon} setSermon={setSermon} />
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={12} md={7}>
           <Grid container item>
             <Grid item xs={12}>
               <Card className={classes.card}>
@@ -109,6 +114,7 @@ const Search = props => {
                   }
                 />
               </Card>
+              {sermon.hasPdf ? <PDFViewer sermon={sermon} /> : null}
             </Grid>
           </Grid>
         </Grid>
@@ -118,4 +124,3 @@ const Search = props => {
 }
 
 export default Search
-          // {sermon.hasPdf ? <PDFViewer sermon={sermon} /> : null}

@@ -1,13 +1,14 @@
 import React, { useState } from "react"
 import SectionContainer from "../Shared/SectionContainer"
 import { Avatar, Grid, Button, Slide, Dialog, Typography } from "@material-ui/core"
-import { makeStyles } from "@material-ui/core/styles"
+import { makeStyles } from "@material-ui/styles"
 import Search from "./Search"
 import SectionHeading from "../Shared/SectionHeading"
 import Benefit from "./Benefit"
 import kenZindler from "../../images/kenZindler.jpg"
 import ProfileCard from "./ProfileCard"
 import microphone from '../../images/microphone.jpg'
+
 
 const useStyles = makeStyles(theme => ({
   root: {
