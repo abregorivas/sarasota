@@ -5,7 +5,7 @@ import { Grid, Modal } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import VisitCard from './VisitCard';
 import GoogleMap from '../common/GoogleMap';
-import { visitApi } from '../../Api/visitApi';
+import { visitApi } from '../../api/visitApi';
 import SectionContainer from '../common/SectionContainer';
 import SectionHeading from '../common/SectionHeading';
 

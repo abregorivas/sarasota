@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import { Avatar, Card, CardHeader, Grid } from '@material-ui/core';
+import { useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 import escapeRegExp from 'escape-string-regexp';
 import { makeStyles } from '@material-ui/styles';
-import sermonList from '../../Api/sermons';
 import AudioPlayer from 'react-h5-audio-player';
 import SearchBar from './SearchBar';
 import SermonList from './SermonList';
 import PDFViewer from './PDFViewer';
-// import './AudioPlayer.scss';
 import PDFMenu from './PDFMenu';
-import { useTheme } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
+import sermonList from '../../api/sermons';
 
 const useStyles = makeStyles(theme => ({
   root: {

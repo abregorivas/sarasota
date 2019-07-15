@@ -3,46 +3,45 @@ import { Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { familyData } from '../../Api/familyApi';
+import { familyData } from '../../api/familyApi';
 import SectionContainer from '../common/SectionContainer';
 import SectionHeading from '../common/SectionHeading';
 import ImgGallery from '../common/ImgGallery';
 import BlockQuote from '../common/BlockQuote';
 
 const useStyles = makeStyles(theme => ({
-    root: {
-      flexGrow: 1,
-      display: 'flex',
-      alignItems: 'center',
-      [theme.breakpoints.down('md')]: {
-        height: 'auto'
-      }
-    },
-    button: {
-      border: `1px solid #F5B733`,
-      backgroundColor: '#FEFEFE',
-      fontWeight: 'bold',
-      borderRadius: 0,
-      paddingRight: theme.spacing(3),
-      paddingLeft: theme.spacing(3),
-      '&:hover': {
-        backgroundColor: '#F5B733'
-      }
-    },
-    content: {
-      maxWidth: 500,
-      color: theme.palette.text.secondary
-    },
-    familyImg: {
-      boxShadow: 'none',
-      margin: theme.spacing(2),
-      backgroundColor: 'transparent',
-      [theme.breakpoints.down('md')]: {
-        maxWidth: 800
-      }
+  root: {
+    flexGrow: 1,
+    display: 'flex',
+    alignItems: 'center',
+    [theme.breakpoints.down('md')]: {
+      height: 'auto'
     }
-  })
-);
+  },
+  button: {
+    border: `1px solid #F5B733`,
+    backgroundColor: '#FEFEFE',
+    fontWeight: 'bold',
+    borderRadius: 0,
+    paddingRight: theme.spacing(3),
+    paddingLeft: theme.spacing(3),
+    '&:hover': {
+      backgroundColor: '#F5B733'
+    }
+  },
+  content: {
+    maxWidth: 500,
+    color: theme.palette.text.secondary
+  },
+  familyImg: {
+    boxShadow: 'none',
+    margin: theme.spacing(2),
+    backgroundColor: 'transparent',
+    [theme.breakpoints.down('md')]: {
+      maxWidth: 800
+    }
+  }
+}));
 
 const Family = () => {
   const classes = useStyles();
