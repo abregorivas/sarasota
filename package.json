@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel src/index.html",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -65,6 +65,6 @@
   },
   "staticFiles": {
     "staticPath": "static",
-    "watcherGlob": "**"
+    "watcherGlob": false
   }
 }
