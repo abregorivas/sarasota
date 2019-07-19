@@ -7,8 +7,8 @@ import {
   useMediaQuery
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
-import ImgCard from '../common/ImgCard';
 import { useTheme } from '@material-ui/core/styles';
+import ImgCard from '../common/ImgCard';
 import RequirementList from './RequirementsList';
 import SectionContainer from '../common/SectionContainer';
 import SectionHeading from '../common/SectionHeading';

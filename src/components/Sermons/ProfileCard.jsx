@@ -6,7 +6,7 @@ import {
   CardContent,
   Typography,
   Fab,
-  Link
+  Link, Button, Grid
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
@@ -47,7 +47,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const VisitCard = ({ img, handleAction, title, subtitle, fabIcon, href }) => {
+const ProfileCard = ({ img, handleAction, title, subtitle, fabIcon, href }) => {
   const classes = useStyles();
 
   return (
@@ -55,7 +55,7 @@ const VisitCard = ({ img, handleAction, title, subtitle, fabIcon, href }) => {
       <CardMedia component="img" image={img} className={classes.media} />
       <CardActions className={classes.actions}>
         <Link className={classes.fab} href={href ? href : null}>
-          <Fab color="primary" aria-label="View Map" onClick={handleAction}>
+          <Fab color="primary" aria-label="View Map">
             {fabIcon}
           </Fab>
         </Link>
@@ -68,9 +68,17 @@ const VisitCard = ({ img, handleAction, title, subtitle, fabIcon, href }) => {
         <Typography variant="subtitle2" component="p">
           {subtitle}
         </Typography>
+        <br/>
+        <Button
+          className={classes.button}
+          variant="outlined"
+          onClick={handleAction}
+        >
+          Listen Now
+        </Button>
       </CardContent>
     </Card>
   );
 };
 
-export default VisitCard;
+export default ProfileCard;

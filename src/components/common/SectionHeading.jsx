@@ -40,9 +40,17 @@ const SectionHeading = ({ headings, align, children }) => {
 };
 
 SectionHeading.propTypes = {
+  children: PropTypes.node,
   heading: PropTypes.string,
   subHeading: PropTypes.string,
   align: PropTypes.string
+};
+
+SectionHeading.defaultProps = {
+  children: null,
+  heading: "Section Heading",
+  subHeading: "Subheading",
+  align: 'inherit'
 };
 
 export default SectionHeading;

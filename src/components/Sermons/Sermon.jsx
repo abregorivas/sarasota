@@ -72,6 +72,7 @@ const Sermon = () => {
             <ProfileCard
               title="Ken Zindler"
               subtitle="Lead Evangelist"
+              handleAction={handleClickOpen}
               fabIcon={
                 <Avatar
                   className={classes.avatar}
@@ -107,14 +108,7 @@ const Sermon = () => {
               </Typography>
             </SectionHeading>
             <br />
-            <Benefit />
-            <Button
-              className={classes.button}
-              variant="outlined"
-              onClick={handleClickOpen}
-            >
-              Listen Now
-            </Button>
+            <Benefit handleClick={handleClickOpen}/>
           </Grid>
         </Grid>
       </SectionContainer>

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import HeadSetIcon from '@material-ui/icons/HeadsetMic';
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
@@ -21,7 +22,8 @@ const useStyles = makeStyles({
   },
   avatar: {
     margin: 10,
-    textAlign: 'center'
+    textAlign: 'center',
+    cursor: 'pointer'
   },
   avatarHeadSet: {
     backgroundColor: '#e67e22'
@@ -34,7 +36,7 @@ const useStyles = makeStyles({
   }
 });
 
-const Benefit = () => {
+const Benefit = ({ handleClick }) => {
   const classes = useStyles();
   return (
     <React.Fragment>
@@ -42,10 +44,13 @@ const Benefit = () => {
         <Grid item xs={4}>
           <Card className={classes.card}>
             <CardContent className={classes.content}>
-              <Avatar className={clsx(classes.avatar, classes.avatarHeadSet)}>
+              <Avatar
+                className={clsx(classes.avatar, classes.avatarHeadSet)}
+                onClick={handleClick}
+              >
                 <HeadSetIcon />
               </Avatar>
-              <Typography variant="subtitle1" gutterBottom={true}>
+              <Typography variant="subtitle1" gutterBottom>
                 Sermons
               </Typography>
               <Typography variant="body2">Listen online</Typography>
@@ -55,10 +60,13 @@ const Benefit = () => {
         <Grid item xs={4}>
           <Card className={classes.card}>
             <CardContent className={classes.content}>
-              <Avatar className={clsx(classes.avatar, classes.avatarHeart)}>
+              <Avatar
+                className={clsx(classes.avatar, classes.avatarHeart)}
+                onClick={handleClick}
+              >
                 <PictureAsPdf />
               </Avatar>
-              <Typography variant="subtitle1" gutterBottom={true}>
+              <Typography variant="subtitle1" gutterBottom>
                 PDF
               </Typography>
               <Typography variant="body2">Read Notes</Typography>
@@ -68,10 +76,13 @@ const Benefit = () => {
         <Grid item xs={4}>
           <Card className={classes.card}>
             <CardContent className={classes.content}>
-              <Avatar className={clsx(classes.avatar, classes.avatarCloud)}>
-                <CloudDownloadIcon className={classes.avatraCloud} />
+              <Avatar
+                className={clsx(classes.avatar, classes.avatarCloud)}
+                onClick={handleClick}
+              >
+                <CloudDownloadIcon className={classes.avatarCloud} />
               </Avatar>
-              <Typography variant="subtitle1" gutterBottom={true}>
+              <Typography variant="subtitle1" gutterBottom>
                 Download
               </Typography>
               <Typography variant="body2">Save & share</Typography>
@@ -81,6 +92,14 @@ const Benefit = () => {
       </Grid>
     </React.Fragment>
   );
+};
+
+Benefit.propTypes = {
+  handleClick: PropTypes.func
+};
+
+Benefit.defaultProps = {
+  handleClick: null
 };
 
 export default Benefit;

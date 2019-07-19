@@ -1,10 +1,11 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
+import { Card, CardContent, Button, Typography } from '@material-ui/core';
 import ImageSlider from '../common/ImageSlider';
 import forestRoad from '../../assets/images/hero/forestroad.jpg';
 import lighthouse from '../../assets/images/hero/lighthouse.jpg';
-import { Card, CardContent, Button } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
+import sarasota from '../../assets/images/hero/sarasota.jpg';
+import morning from '../../assets/images/hero/morning-sun.jpg'
 import BlockQuote from '../common/BlockQuote';
 
 const useStyles = makeStyles(theme => ({
@@ -66,23 +67,23 @@ const Hero = () => {
     <div className={classes.card}>
       <Card className={classes.card}>
         <ImageSlider
-          images={[lighthouse, forestRoad, lighthouse, forestRoad]}
+          images={[lighthouse, sarasota, forestRoad, morning]}
         />
         <CardContent className={classes.content}>
           <Typography
             variant="h2"
-            gutterBottom={true}
+            gutterBottom
             className={classes.heading}
           >
             Sarasota
           </Typography>
-          <Typography variant="h4" gutterBottom={true}>
+          <Typography variant="h4" gutterBottom>
             Christian Fellowship
           </Typography>
           <BlockQuote
             invert="true"
             cite="1 Corinthians 13:13"
-            quote={`And now these three remain; Faith, Hope and Love. But the greatest of these is Love.`}
+            quote="And now these three remain; Faith, Hope and Love. But the greatest of these is Love."
           />
           <Button variant="outlined" className={classes.button}>
             Join us

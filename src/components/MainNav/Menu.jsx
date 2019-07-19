@@ -19,8 +19,7 @@ const useStyles = makeStyles(theme => ({
     color: '#333',
     '&:hover': {
       textDecoration: 'none',
-      border: '1px solid #ffa000',
-      borderRadius: '4px'
+      borderBottom: '1px solid #ffa000',
     }
   }
 }));
