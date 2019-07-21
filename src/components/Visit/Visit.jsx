@@ -5,7 +5,7 @@ import { Grid, Modal } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import VisitCard from './VisitCard';
 import GoogleMap from '../common/GoogleMap';
-import { visitApi } from '../../api/visitApi';
+import visitApi from '../../api/visitApi';
 import SectionContainer from '../common/SectionContainer';
 import SectionHeading from '../common/SectionHeading';
 
@@ -44,16 +44,12 @@ const Visit = () => {
   const [map, setMap] = useState('');
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down('sm'));
-  const handleOpen = x => {
-    if (x) {
-      setStatus(true);
-      setMap(x);
-    }
-  };
 
-  const handleClose = status => {
-    setStatus(status);
-    setMap('');
+  const handleOpen = mapUrl => {
+    if (mapUrl) {
+      setMap(mapUrl);
+      setStatus(true);
+    }
   };
 
   return (
@@ -63,7 +59,7 @@ const Visit = () => {
           aria-labelledby="simple-modal-title"
           aria-describedby="simple-modal-description"
           open={status}
-          onClose={() => handleClose(false)}
+          onClose={() => setStatus(false)}
         >
           <GoogleMap url={map} classes={classes} />
         </Modal>
@@ -75,16 +71,9 @@ const Visit = () => {
           {visitApi.map(item => (
             <Grid item xs={12} sm={4} key={uuid()}>
               <VisitCard
-                img={item.imgSrc}
-                time={item.time}
-                addr1={item.addr1}
-                addr2={item.addr2}
                 handleAction={() => handleOpen(item.mapUrl)}
                 actionLabel="View Map"
-                title={item.title}
-                subtitle={item.venue}
-                href={item.href}
-                fabIcon={item.icon}
+                cardInfo={item}
               />
             </Grid>
           ))}

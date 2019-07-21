@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Card,
   CardActions,
@@ -47,49 +48,57 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const VisitCard = ({
-  img,
-  time,
-  addr1,
-  addr2,
-  handleAction,
-  title,
-  subtitle,
-  fabIcon,
-  href
-}) => {
+const VisitCard = ({ handleAction, cardInfo }) => {
   const classes = useStyles();
 
   return (
     <Card className={classes.root}>
-      <CardMedia component="img" image={img} />
+      <CardMedia component="img" image={cardInfo.imgSrc} />
       <CardActions className={classes.actions}>
-        <Link className={classes.fab} href={href ? href : null}>
+        <Link
+          className={classes.fab}
+          href={cardInfo.href ? cardInfo.href : null}
+        >
           <Fab color="primary" aria-label="View Map" onClick={handleAction}>
-            {fabIcon}
+            {cardInfo.icon}
           </Fab>
         </Link>
       </CardActions>
       <CardContent className={classes.content}>
         <Typography variant="subtitle1" component="h6">
-          {title}
+          {cardInfo.title}
         </Typography>
         <Typography variant="subtitle2" component="p">
-          {subtitle}
+          {cardInfo.venue}
         </Typography>
         <br />
         <Typography variant="body2" component="p">
-          {time}
+          {cardInfo.time}
         </Typography>
         <Typography variant="body2" component="p">
-          {addr1}
+          {cardInfo.addr1}
         </Typography>
         <Typography variant="body2" component="p">
-          {addr2}
+          {cardInfo.addr2}
         </Typography>
       </CardContent>
     </Card>
   );
+};
+
+VisitCard.propTypes = {
+  cardInfo: PropTypes.shape({
+    title: PropTypes.string,
+    venue: PropTypes.string,
+    time: PropTypes.string.isRequired,
+    addr1: PropTypes.string.isRequired,
+    addr2: PropTypes.string,
+    imgSrc: PropTypes.string.isRequired,
+    icon: PropTypes.node,
+    href: PropTypes.string,
+    handleAction: PropTypes.func
+  }).isRequired,
+  handleAction: PropTypes.func.isRequired
 };
 
 export default VisitCard;

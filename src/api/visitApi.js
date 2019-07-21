@@ -5,7 +5,7 @@ import bibleStudy from '../assets/images/visit/bibleStudy.jpg';
 import bibleReading from '../assets/images/visit/bibleReading.jpeg';
 import peopleGathered from '../assets/images/visit/peopleGathered.jpg';
 
-export const visitApi = [
+const visitApi = [
   {
     title: 'Church Service',
     venue: 'St. Wilfreds Church',
@@ -42,3 +42,5 @@ export const visitApi = [
     mapUrl: null
   }
 ];
+
+export default  visitApi
