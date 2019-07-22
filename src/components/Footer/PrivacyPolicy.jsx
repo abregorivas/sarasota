@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
   root: {
-    marginTop: 80
+    flexGrow: 1
   },
   text: {
     maxWidth: 600
@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Typography variant="h3" gutterBottom className={classes.text}>
+      <Typography variant="h3" gutterBottomame={classes.text}>
         Privacy Policy
       </Typography>
       <br />
@@ -24,19 +24,18 @@ const PrivacyPolicy = () => {
       </Typography>
       <br />
       <Typography variant="body2" className={classes.text}>
-        sarasota ("us", "we", or "our") operates the
-        http://sarasotachristianfellowship.com website (the "Service").
+        {`sarasota ("us", "we", or "our") operates the
+        http://sarasotachristianfellowship.com website (the "Service").`}
       </Typography>
       <br />
       <Typography variant="body2" className={classes.text}>
         This page informs you of our policies regarding the collection, use, and
         disclosure of personal data when you use our Service and the choices you
         have associated with that data. Our Privacy Policy for sarasota is
-        created with the help of the{' '}
+        created with the help of the
         <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator.php">
-          Free Privacy Policy Generator
+          {` Privacy Policy Generator.`}
         </a>
-        .
       </Typography>
       <br />
       <Typography variant="body2" className={classes.text}>
@@ -57,7 +56,7 @@ const PrivacyPolicy = () => {
         to provide and improve our Service to you.
       </Typography>
       <br />
-      <Typography variant="h4" gutterBottom={true} className={classes.text}>
+      <Typography variant="h4" gutterBottom className={classes.text}>
         Types of Data Collected
       </Typography>
 
@@ -68,8 +67,8 @@ const PrivacyPolicy = () => {
       <Typography variant="body2" className={classes.text}>
         While using our Service, we may ask you to provide us with certain
         personally identifiable information that can be used to contact or
-        identify you ("Personal Data"). Personally identifiable information may
-        include, but is not limited to:
+        identify you (&quot;Personal Data&quot;). Personally identifiable
+        information may include, but is not limited to:
       </Typography>
 
       <ul>
@@ -82,11 +81,11 @@ const PrivacyPolicy = () => {
 
       <Typography variant="body2" className={classes.text}>
         We may also collect information how the Service is accessed and used
-        ("Usage Data"). This Usage Data may include information such as your
-        computer's Internet Protocol address (e.g. IP address), browser type,
-        browser version, the pages of our Service that you visit, the time and
-        date of your visit, the time spent on those pages, unique device
-        identifiers and other diagnostic data.
+        (&quot;Usage Data&quot;). This Usage Data may include information such
+        as your computer&apos;s Internet Protocol address (e.g. IP address),
+        browser type, browser version, the pages of our Service that you visit,
+        the time and date of your visit, the time spent on those pages, unique
+        device identifiers and other diagnostic data.
       </Typography>
 
       <h4>Tracking & Cookies Data</h4>
@@ -114,16 +113,17 @@ const PrivacyPolicy = () => {
       </Typography>
       <ul>
         <li>
-          <strong>Session Cookies.</strong> We use Session Cookies to operate
-          our Service.
+          <strong>Session Cookies.</strong>
+          We use Session Cookies to operate our Service.
         </li>
         <li>
-          <strong>Preference Cookies.</strong> We use Preference Cookies to
-          remember your preferences and various settings.
+          <strong>Preference Cookies.</strong>
+          We use Preference Cookies to remember your preferences and various
+          settings.
         </li>
         <li>
-          <strong>Security Cookies.</strong> We use Security Cookies for
-          security purposes.
+          <strong>Security Cookies.</strong>
+          We use Security Cookies for security purposes.
         </li>
       </ul>
 
@@ -176,7 +176,7 @@ const PrivacyPolicy = () => {
         security of your data and other personal information.
       </Typography>
       <br />
-      <Typography variant="h5" gutterBottom={true}>
+      <Typography variant="h5" gutterBottom>
         Disclosure Of Data
       </Typography>
       <Typography variant="h6">Legal Requirements</Typography>
@@ -199,7 +199,7 @@ const PrivacyPolicy = () => {
         <li>To protect against legal liability</li>
       </ul>
 
-      <Typography variant="h5" gutterBottom={true}>
+      <Typography variant="h5" gutterBottom>
         Security Of Data
       </Typography>
       <Typography variant="body2" className={classes.text}>
@@ -210,14 +210,14 @@ const PrivacyPolicy = () => {
         security.
       </Typography>
       <br />
-      <Typography variant="h5" gutterBottom={true}>
+      <Typography variant="h5" gutterBottom>
         Service Providers
       </Typography>
       <Typography variant="body2" className={classes.text}>
         We may employ third party companies and individuals to facilitate our
-        Service ("Service Providers"), to provide the Service on our behalf, to
-        perform Service-related services or to assist us in analyzing how our
-        Service is used.
+        Service (&quot;Service Providers&quot;), to provide the Service on our
+        behalf, to perform Service-related services or to assist us in analyzing
+        how our Service is used.
       </Typography>
       <br />
       <Typography variant="body2" className={classes.text}>
@@ -226,14 +226,14 @@ const PrivacyPolicy = () => {
         for any other purpose.
       </Typography>
       <br />
-      <Typography variant="h5" gutterBottom={true}>
+      <Typography variant="h5" gutterBottom>
         Links To Other Sites
       </Typography>
       <Typography variant="body2" className={classes.text}>
         Our Service may contain links to other sites that are not operated by
         us. If you click on a third party link, you will be directed to that
-        third party's site. We strongly advise you to review the Privacy Policy
-        of every site you visit.
+        third party&apos;s site. We strongly advise you to review the Privacy
+        Policy of every site you visit.
       </Typography>
       <br />
       <Typography variant="body2" className={classes.text}>
@@ -241,11 +241,12 @@ const PrivacyPolicy = () => {
         privacy policies or practices of any third party sites or services.
       </Typography>
       <br />
-      <Typography variant="h5" gutterBottom={true}>
-        Children's Privacy
+      <Typography variant="h5" gutterBottom>
+        Children&apos;s Privacy
       </Typography>
       <Typography variant="body2" className={classes.text}>
-        Our Service does not address anyone under the age of 18 ("Children").
+        Our Service does not address anyone under the age of 18 (&quot;
+        Children&quot;).
       </Typography>
       <br />
       <Typography variant="body2" className={classes.text}>
@@ -257,7 +258,7 @@ const PrivacyPolicy = () => {
         remove that information from our servers.
       </Typography>
       <br />
-      <Typography variant="h5" gutterBottom={true}>
+      <Typography variant="h5" gutterBottom>
         Changes To This Privacy Policy
       </Typography>
       <Typography variant="body2" className={classes.text}>
@@ -267,8 +268,8 @@ const PrivacyPolicy = () => {
       <br />
       <Typography variant="body2" className={classes.text}>
         We will let you know via email and/or a prominent notice on our Service,
-        prior to the change becoming effective and update the "effective date"
-        at the top of this Privacy Policy.
+        prior to the change becoming effective and update the &quot;effective
+        date&quot; at the top of this Privacy Policy.
       </Typography>
       <br />
       <Typography variant="body2" className={classes.text}>
@@ -277,16 +278,15 @@ const PrivacyPolicy = () => {
         posted on this page.
       </Typography>
       <br />
-      <Typography variant="h5" gutterBottom={true}>
+      <Typography variant="h5" gutterBottom>
         Contact Us
       </Typography>
       <Typography variant="body2" className={classes.text}>
         If you have any questions about this Privacy Policy, please contact us:
       </Typography>
       <br />
-      <ul>
-        <li>By email: abregorivas@gmail.com</li>
-      </ul>
+      <br />
+      <br />
     </div>
   );
 };
