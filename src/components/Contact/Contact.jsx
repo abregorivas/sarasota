@@ -1,10 +1,10 @@
 import React from 'react';
+import { makeStyles } from '@material-ui/styles';
+import { Card, CardHeader, CardMedia, Grid } from '@material-ui/core';
 import ContactForm from './ContactForm';
 import SectionContainer from '../common/SectionContainer';
 import SectionHeading from '../common/SectionHeading';
-import { makeStyles } from '@material-ui/styles';
 
-import { Card, CardHeader, CardMedia, Grid } from '@material-ui/core';
 
 const useStyles = makeStyles(theme => ({
   root: {
