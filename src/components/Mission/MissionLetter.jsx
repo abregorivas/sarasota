@@ -1,26 +1,25 @@
-import React from "react"
-import { Typography } from "@material-ui/core"
-import { makeStyles } from "@material-ui/styles"
-import BlockQuote from "../common/BlockQuote"
+import React from 'react';
+import { Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
+import BlockQuote from '../common/BlockQuote';
 
 const useStyles = makeStyles(theme => ({
   container: {
     margin: 0,
-    marginTop: 80,
     paddingTop: theme.spacing(2),
     paddingBottom: theme.spacing(2),
     paddingLeft: theme.spacing(3),
-    columnWidth: "31em",
+    columnWidth: '31em',
     columnGap: theme.spacing(4),
-    columnRule: `1px dotted #333333`,
+    columnRule: `1px dotted #333333`
   },
   content: {
-    maxWidth: 500,
-  },
-}))
+    maxWidth: 500
+  }
+}));
 
 const MissionLetter = () => {
-  const classes = useStyles()
+  const classes = useStyles();
   return (
     <div className={classes.container}>
       <Typography
@@ -133,7 +132,7 @@ const MissionLetter = () => {
         shake the foundations in this part of the world.
       </Typography>
     </div>
-  )
-}
+  );
+};
 
-export default MissionLetter
+export default MissionLetter;

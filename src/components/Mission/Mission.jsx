@@ -1,12 +1,13 @@
 import React from 'react';
 import { Button, Grid, Typography } from '@material-ui/core';
+import { makeStyles } from '@material-ui/styles';
 import SectionContainer from '../common/SectionContainer';
 import MissionLetter from './MissionLetter';
-import { makeStyles } from '@material-ui/styles';
 import DialogContainer from '../common/DialogContainer';
 import ImgCard from '../common/ImgCard';
 import SectionHeading from '../common/SectionHeading';
 import BlockQuote from '../common/BlockQuote';
+import coffeePen from '../../assets/images/coffee-pen.jpg'
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -62,11 +63,8 @@ const Mission = () => {
       <SectionContainer>
         <Grid container spacing={8} alignItems="center">
           <Grid item xs={12} md={6}>
-            <ImgCard
-              imgSrc={
-                'https://images.pexels.com/photos/6357/coffee-cup-desk-pen.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
-              }
-            />
+            <ImgCard imgSrc={coffeePen} />
+
           </Grid>
           <Grid item xs={12} md={6}>
             <SectionHeading
@@ -76,7 +74,7 @@ const Mission = () => {
             <Typography
               className={classes.content}
               variant="body2"
-              gutterBottom={true}
+              gutterBottom
             >
               Sarasota Christian Fellowship is a non-denominational fellowship
               with our roots in the Restoration movement. We strongly embrace
