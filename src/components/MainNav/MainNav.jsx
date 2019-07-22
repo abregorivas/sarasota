@@ -14,7 +14,7 @@ import {
 import Brand from './Brand';
 import Menu from './Menu';
 import SideBar from './Sidebar';
-import { MainNavRoutes } from '../../api/navigation';
+import MainNavRoutes from '../../api/navigation';
 
 const useStyles = makeStyles(theme => ({
   root: {},
