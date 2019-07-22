@@ -11,12 +11,13 @@ const useStyles = makeStyles(theme =>
     },
     heading: {
       color: theme.palette.text.primary,
-      fontWeight: 'bold'
+      fontWeight: 'bold',
+      textAlign: 'left'
     }
   })
 );
 
-const SectionHeading = ({ headings, align, children }) => {
+const SectionHeading = ({ headings, children }) => {
   const classes = useStyles();
 
   // noinspection JSRemoveUnnecessaryParentheses
@@ -29,7 +30,6 @@ const SectionHeading = ({ headings, align, children }) => {
           variant="h3"
           className={classes.heading}
           component="h3"
-          align={align}
         >
           {heading}
         </Typography>
@@ -41,16 +41,12 @@ const SectionHeading = ({ headings, align, children }) => {
 
 SectionHeading.propTypes = {
   children: PropTypes.node,
-  heading: PropTypes.string,
-  subHeading: PropTypes.string,
-  align: PropTypes.string
+  headings: PropTypes.string
 };
 
 SectionHeading.defaultProps = {
   children: null,
-  heading: "Section Heading",
-  subHeading: "Subheading",
-  align: 'inherit'
+  headings: 'Section Heading'
 };
 
 export default SectionHeading;

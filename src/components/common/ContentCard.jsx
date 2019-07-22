@@ -28,7 +28,7 @@ const ImgCard = ({ children }) => {
 };
 
 ImgCard.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node.isRequired
 };
 
 export default ImgCard;

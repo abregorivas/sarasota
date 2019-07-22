@@ -60,10 +60,10 @@ const DialogContainer = props => {
 };
 
 DialogContainer.propTypes = {
-  title: PropTypes.string,
-  open: PropTypes.bool,
-  handleClose: PropTypes.func,
-  children: PropTypes.node
+  title: PropTypes.string.isRequired,
+  open: PropTypes.bool.isRequired,
+  handleClose: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired
 };
 
 export default DialogContainer;

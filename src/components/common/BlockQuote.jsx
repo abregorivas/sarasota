@@ -64,9 +64,15 @@ const BlockQuote = ({ quote, cite, invert }) => {
 };
 
 BlockQuote.propTypes = {
+  cite: PropTypes.string,
   quote: PropTypes.string,
-  classes: PropTypes.object,
   invert: PropTypes.string
+};
+
+BlockQuote.defaultProps = {
+  cite: '',
+  quote: '',
+  invert: null
 };
 
 export default BlockQuote;

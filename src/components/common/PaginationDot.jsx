@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
 
 const PaginationDot = ({ index, active, handleClick }) => {
   const classes = useStyles();
-  let activeDot = clsx(classes.dot, classes.active);
+  const activeDot = clsx(classes.dot, classes.active);
   return (
     <button
       type="button"

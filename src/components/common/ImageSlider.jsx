@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 import { CardMedia } from '@material-ui/core';
 import { makeStyles, useTheme } from '@material-ui/styles';
-import Pagination from './Pagination';
 import uuid from 'uuid';
+import Pagination from './Pagination';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -55,6 +56,15 @@ const ImageSlider = ({ images }) => {
       />
     </div>
   );
+};
+
+ImageSlider.propTypes = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      img: PropTypes.string,
+      title: PropTypes.string
+    })
+  ).isRequired
 };
 
 export default ImageSlider;

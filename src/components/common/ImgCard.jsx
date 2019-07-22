@@ -20,7 +20,7 @@ const ImgCard = ({ imgSrc }) => {
 };
 
 ImgCard.propTypes = {
-  imgSrc: PropTypes.string
+  imgSrc: PropTypes.string.isRequired
 };
 
 export default ImgCard;
