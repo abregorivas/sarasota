@@ -43,7 +43,6 @@ const ImageSlider = ({ images }) => {
                 className={classes.media}
                 component="img"
                 image={img}
-                title={img.title ? img.title : ''}
               />
             ) : null}
           </div>
@@ -59,12 +58,7 @@ const ImageSlider = ({ images }) => {
 };
 
 ImageSlider.propTypes = {
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      img: PropTypes.string,
-      title: PropTypes.string
-    })
-  ).isRequired
+  images: PropTypes.arrayOf(PropTypes.string).isRequired
 };
 
 export default ImageSlider;

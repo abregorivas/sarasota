@@ -41,7 +41,7 @@ const SectionHeading = ({ headings, children }) => {
 
 SectionHeading.propTypes = {
   children: PropTypes.node,
-  headings: PropTypes.string
+  headings: PropTypes.arrayOf(PropTypes.string)
 };
 
 SectionHeading.defaultProps = {
