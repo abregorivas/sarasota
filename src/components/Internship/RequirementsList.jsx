@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Avatar, List, ListItem, ListItemText } from '@material-ui/core';
 import uuid from 'uuid';
 import { makeStyles } from '@material-ui/styles';
@@ -29,10 +30,10 @@ const RequirementsList = props => {
       {list.map(item => (
         <ListItem key={uuid()} className={classes.listItem}>
           <ListItemAvatar>
-            <Avatar>></Avatar>
+            <Avatar />
           </ListItemAvatar>
           <ListItemText
-            disableTypography={true}
+            disableTypography
             className={classes.heading}
             primary={
               <Typography variant="subtitle1">{item.heading}</Typography>
@@ -45,6 +46,15 @@ const RequirementsList = props => {
       ))}
     </List>
   );
+};
+
+RequirementsList.propTypes = {
+  list: PropTypes.arrayOf(
+    PropTypes.shape({
+      heading: PropTypes.string,
+      message: PropTypes.string
+    })
+  ).isRequired
 };
 
 export default RequirementsList;

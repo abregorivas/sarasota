@@ -1,14 +1,12 @@
 import React, { Fragment } from 'react';
 import { Typography } from '@material-ui/core';
-import { makeStyles, createStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles(theme =>
-  createStyles({
-    text: {
-      color: '#2e3131'
-    }
-  })
-);
+const useStyles = makeStyles ({
+  text: {
+    color: '#2e3131'
+  }
+});
 
 const JobDescription = () => {
   const classes = useStyles();

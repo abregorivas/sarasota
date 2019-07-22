@@ -1,8 +1,8 @@
 import React from 'react';
 import { Card, CardMedia, Grid } from '@material-ui/core';
-import { campusInfo } from '../../api/campusApi';
-import uuid from 'uuid';
 import { makeStyles } from '@material-ui/styles';
+import uuid from 'uuid';
+import campusInfo from '../../api/campusApi';
 
 const useStyles = makeStyles(theme => ({
   card: {
