@@ -18,24 +18,24 @@ const useStyles = makeStyles(theme => ({
       height: 'auto'
     }
   },
-  modalCard: {
-    position: 'absolute',
-    backgroundColor: theme.palette.background.paper,
-    boxShadow: theme.shadows[5],
-    padding: theme.spacing(4),
-    outline: 'none',
-    top: `50%`,
-    left: `50%`,
-    transform: `translate(-50%, -50%)`
-  },
-  modalMedia: {
-    width: 600,
-    height: 400,
-    [theme.breakpoints.down('xs')]: {
-      maxWidth: 360,
-      maxHeight: 260
-    }
-  }
+  // modalCard: {
+  //   position: 'absolute',
+  //   backgroundColor: theme.palette.background.paper,
+  //   boxShadow: theme.shadows[5],
+  //   padding: theme.spacing(4),
+  //   outline: 'none',
+  //   top: `50%`,
+  //   left: `50%`,
+  //   transform: `translate(-50%, -50%)`
+  // },
+  // modalMedia: {
+  //   width: 600,
+  //   height: 400,
+  //   [theme.breakpoints.down('xs')]: {
+  //     maxWidth: 360,
+  //     maxHeight: 260
+  //   }
+  // }
 }));
 
 const Visit = () => {
@@ -56,12 +56,12 @@ const Visit = () => {
     <div className={classes.root} id="visit">
       <SectionContainer>
         <Modal
-          aria-labelledby="simple-modal-title"
-          aria-describedby="simple-modal-description"
+          aria-labelledby="googlemap"
+          aria-describedby="googlemap directions"
           open={status}
           onClose={() => setStatus(false)}
         >
-          <GoogleMap url={map} classes={classes} />
+          <GoogleMap url={map} />
         </Modal>
 
         <Grid container spacing={matches ? 2 : 4}>
