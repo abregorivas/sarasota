@@ -5,7 +5,7 @@ import scf from '../assets/images/colleges/state-college-fl-logo.png';
 import suncoast from '../assets/images/colleges/suncoast-logo.png';
 import usf from '../assets/images/colleges/usf-logo.png';
 
-export const campusInfo = [
+const campusInfo = [
   {
     name: 'Eckerd College',
     img: eckerd,
@@ -37,3 +37,5 @@ export const campusInfo = [
     url: 'http://www.usf.edu/'
   }
 ];
+
+export default campusInfo
