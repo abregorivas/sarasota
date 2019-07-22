@@ -3,7 +3,7 @@ import { Grid, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { familyData } from '../../api/familyApi';
+import familyData from '../../api/familyApi';
 import SectionContainer from '../common/SectionContainer';
 import SectionHeading from '../common/SectionHeading';
 import ImgGallery from '../common/ImgGallery';
