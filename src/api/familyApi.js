@@ -1,5 +1,5 @@
 import zindlerFamily from '../assets/images/family/ZindlerFamily.jpg';
-import meachamFamily from '../assets/images/family/meachamFamily.png';
+import meachamFamily from '../assets/images/family/meachamFamily.jpg';
 import chanti from '../assets/images/family/chantiBoschetti.jpg';
 import family from '../assets/images/family/family.jpg';
 
