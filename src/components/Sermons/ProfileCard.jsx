@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Card,
   CardActions,
@@ -6,7 +7,7 @@ import {
   CardContent,
   Typography,
   Fab,
-  Link, Button, Grid
+  Link
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
@@ -24,14 +25,7 @@ const useStyles = makeStyles(theme => ({
   content: {
     textAlign: 'center'
   },
-  button: {
-    margin: theme.spacing(1),
-    borderColor: theme.palette.primary.main,
-    '&:hover': {
-      backgroundColor: theme.palette.primary.main,
-      color: 'white'
-    }
-  },
+
   icon: {
     color: 'tomato',
     marginLeft: theme.spacing(2)
@@ -47,14 +41,14 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const ProfileCard = ({ img, handleAction, title, subtitle, fabIcon, href }) => {
+const ProfileCard = ({ img, title, subtitle, fabIcon, href }) => {
   const classes = useStyles();
 
   return (
     <Card raised className={classes.root}>
       <CardMedia component="img" image={img} className={classes.media} />
       <CardActions className={classes.actions}>
-        <Link className={classes.fab} href={href ? href : null}>
+        <Link className={classes.fab} href={href || null}>
           <Fab color="primary" aria-label="View Map">
             {fabIcon}
           </Fab>
@@ -68,17 +62,18 @@ const ProfileCard = ({ img, handleAction, title, subtitle, fabIcon, href }) => {
         <Typography variant="subtitle2" component="p">
           {subtitle}
         </Typography>
-        <br/>
-        <Button
-          className={classes.button}
-          variant="outlined"
-          onClick={handleAction}
-        >
-          Listen Now
-        </Button>
+        <br />
       </CardContent>
     </Card>
   );
+};
+
+ProfileCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired,
+  fabIcon: PropTypes.node.isRequired,
+  href: PropTypes.func.isRequired
 };
 
 export default ProfileCard;

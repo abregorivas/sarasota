@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Avatar, Card, CardHeader, Grid } from '@material-ui/core';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
@@ -62,8 +63,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-const Search = props => {
-  const { handleClose } = props;
+const Search = ({ handleClose }) => {
   const classes = useStyles();
   const [sermons, setSermons] = useState(sermonList);
   const [sermon, setSermon] = useState(sermonList[0]);
@@ -72,7 +72,7 @@ const Search = props => {
 
   const filterSearch = searchValue => {
     const match = new RegExp(escapeRegExp(searchValue), 'i');
-    let newList = sermonList.reduce((prev, cur) => {
+    const newList = sermonList.reduce((prev, cur) => {
       const newVal = Object.assign({}, cur, {
         show: match.test(cur.title)
       });
@@ -103,7 +103,7 @@ const Search = props => {
                   className={classes.cardHeader}
                   avatar={
                     <Avatar aria-label="Recipe" className={classes.avatar}>
-                      {sermon.author ? sermon.author[0].toUpperCase() : 'G'}
+                      {sermon.author && sermon.author[0].toUpperCase()}
                     </Avatar>
                   }
                   action={<PDFMenu sermon={sermon} />}
@@ -122,6 +122,10 @@ const Search = props => {
       </Grid>
     </div>
   );
+};
+
+Search.propTypes = {
+  handleClose: PropTypes.func.isRequired
 };
 
 export default Search;

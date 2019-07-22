@@ -109,9 +109,8 @@ const SearchBar = props => {
 };
 
 SearchBar.propTypes = {
-  classes: PropTypes.object,
-  filterSearch: PropTypes.func,
-  handleClose: PropTypes.func
+  filterSearch: PropTypes.func.isRequired,
+  handleClose: PropTypes.func.isRequired
 };
 
 export default SearchBar;

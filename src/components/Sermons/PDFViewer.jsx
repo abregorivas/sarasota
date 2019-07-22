@@ -31,14 +31,8 @@ const PDFViewer = props => {
   const { sermon } = props;
   const theme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
-
   const handleNext = () => setActiveStep(prevActiveStep => prevActiveStep + 1);
-
   const handleBack = () => setActiveStep(prevActiveStep => prevActiveStep - 1);
-
-  // useEffect(() => {
-  //
-  // },[])
 
   return (
     <div>
@@ -98,7 +92,7 @@ const PDFViewer = props => {
 };
 
 PDFViewer.propTypes = {
-  sermon: PropTypes.PropTypes.node
+  sermon: PropTypes.node.isRequired
 };
 
 export default PDFViewer;

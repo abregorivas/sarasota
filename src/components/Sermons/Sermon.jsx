@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SectionContainer from '../common/SectionContainer';
 import {
   Avatar,
   Grid,
@@ -9,6 +8,7 @@ import {
   Typography
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
+import SectionContainer from '../common/SectionContainer';
 import Search from './Search';
 import SectionHeading from '../common/SectionHeading';
 import Benefit from './Benefit';
@@ -108,7 +108,14 @@ const Sermon = () => {
               </Typography>
             </SectionHeading>
             <br />
-            <Benefit handleClick={handleClickOpen}/>
+            <Benefit handleClick={handleClickOpen} />
+            <Button
+              className={classes.button}
+              variant="outlined"
+              onClick={handleClickOpen}
+            >
+              Go to Sermons
+            </Button>
           </Grid>
         </Grid>
       </SectionContainer>

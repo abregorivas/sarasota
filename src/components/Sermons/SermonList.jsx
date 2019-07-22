@@ -4,7 +4,7 @@ import { List, ListItem, IconButton, ListItemText } from '@material-ui/core';
 import PictureAsPdf from '@material-ui/icons/PictureAsPdf';
 import CloudDownload from '@material-ui/icons/CloudDownload';
 import { makeStyles, createStyles } from '@material-ui/styles';
-import uuidv1 from 'uuid';
+import uuid from 'uuid';
 
 const useStyles = makeStyles(theme =>
   createStyles({
@@ -50,7 +50,7 @@ const SermonList = props => {
         .map(item => (
           <ListItem
             button
-            key={uuidv1()}
+            key={uuid()}
             selected={item.fileName === sermon.fileName}
           >
             <IconButton
@@ -59,9 +59,6 @@ const SermonList = props => {
               aria-label="Delete"
               href={`sermons/audio/${item.fileName}.mp3`}
               download
-              onClick={() => {
-                console.log('play clicked');
-              }}
             >
               <CloudDownload color="primary" download />
             </IconButton>
@@ -72,9 +69,6 @@ const SermonList = props => {
               aria-label="Pdf Notes"
               href={`sermons/pdf/${item.fileName}.pdf`}
               download
-              onClick={() => {
-                console.log('play clicked');
-              }}
             >
               <PictureAsPdf style={{ color: '#bf360c' }} />
             </IconButton>
@@ -91,9 +85,16 @@ const SermonList = props => {
 };
 
 SermonList.propTypes = {
-  sermons: PropTypes.array,
-  setSermon: PropTypes.func,
-  sermon: PropTypes.object
+  sermons: PropTypes.arrayOf(PropTypes.object).isRequired,
+  setSermon: PropTypes.func.isRequired,
+  sermon: PropTypes.shape({
+    title: PropTypes.string,
+    date: PropTypes.string,
+    author: PropTypes.string,
+    fileName: PropTypes.string,
+    hasPdf: PropTypes.bool,
+    pdfPages: PropTypes.number
+  }).isRequired
 };
 
 export default SermonList;
