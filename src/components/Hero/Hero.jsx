@@ -2,10 +2,16 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Button, Typography, Link } from '@material-ui/core';
 import ImageSlider from '../common/ImageSlider';
-import forestRoad from '../../assets/images/hero/forestroad.jpg';
+// import forestRoad from '../../assets/images/hero/forestroad.jpg';
 import lighthouse from '../../assets/images/hero/lighthouse.jpg';
 import sarasota from '../../assets/images/hero/sarasota.jpg';
-import morning from '../../assets/images/hero/morning-sun.jpg';
+// import morning from '../../assets/images/hero/morning-sun.jpg';
+// import beach from '../../assets/images/hero/architecture-beach-coast.jpg';
+// import beachClouds from '../../assets/images/hero/beach-clouds-daylight.jpg';
+import animalBeach from '../../assets/images/hero/animal-beach-coast.jpg'
+import seaStar from '../../assets/images/hero/sea-star.jpg'
+import handsup from '../../assets/images/hero/handsup.jpg'
+import sandals from '../../assets/images/hero/sandals.jpg'
 import BlockQuote from '../common/BlockQuote';
 
 const useStyles = makeStyles(theme => ({
@@ -70,7 +76,7 @@ const Hero = () => {
   return (
     <div className={classes.card}>
       <Card className={classes.card}>
-        <ImageSlider images={[lighthouse, sarasota, forestRoad, morning]} />
+        <ImageSlider images={[ sarasota, handsup, sandals, animalBeach, seaStar, lighthouse]} />
         <CardContent className={classes.content}>
           <Typography variant="h2" gutterBottom className={classes.heading}>
             Sarasota
