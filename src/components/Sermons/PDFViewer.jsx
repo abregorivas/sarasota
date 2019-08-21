@@ -92,7 +92,7 @@ const PDFViewer = props => {
 };
 
 PDFViewer.propTypes = {
-  sermon: PropTypes.node.isRequired
+  sermon: PropTypes.shape(PropTypes.object).isRequired
 };
 
 export default PDFViewer;
