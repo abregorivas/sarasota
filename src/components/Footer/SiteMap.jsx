@@ -21,11 +21,11 @@ const useStyles = makeStyles(theme => ({
 const Sitemap = ({ toggleModal }) => {
   const classes = useStyles();
   const [listItems] = useState([
-    'Mission',
-    'Services',
-    'Sermons',
-    'Internship',
-    'Contact'
+    'mission',
+    'visit',
+    'sermons',
+    'internship',
+    'contact'
   ]);
   return (
     <List component="nav">
