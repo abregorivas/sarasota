@@ -93,7 +93,7 @@ const Internship = () => {
             open={open}
             handleClose={() => handleClose()}
           >
-            <Grid container style={{ marginTop: '80px' }}>
+            <Grid container>
               <Grid item xs={12} sm={6}>
                 <RequirementList list={requirements.slice(0, 8)} />
               </Grid>
