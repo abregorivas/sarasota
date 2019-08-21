@@ -1,5 +1,12 @@
 import React, { useState } from 'react';
-import { Typography, Grid, Card, CardMedia, Divider } from '@material-ui/core';
+import {
+  Typography,
+  Grid,
+  Card,
+  CardMedia,
+  Divider,
+  Link
+} from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import Donation from './Donation';
 import SiteMap from './SiteMap';
@@ -63,7 +70,13 @@ const Footer = () => {
             </Typography>
             <br />
             <Card className={classes.card}>
-              <CardMedia component="img" image={ipiLogo} />
+              <Link
+                href="https://www.ipibooks.com/"
+                target="_blank"
+                rel="noopener"
+              >
+                <CardMedia component="img" image={ipiLogo} />
+              </Link>
             </Card>
           </Grid>
 
