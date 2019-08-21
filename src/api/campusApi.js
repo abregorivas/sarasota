@@ -9,33 +9,33 @@ const campusInfo = [
   {
     name: 'Eckerd College',
     img: eckerd,
-    url: 'https://www.eckerd.edu/'
+    url: 'https://www.eckerd.edu/',
   },
   {
     name: 'New College of Florida',
     img: ncf,
-    url: 'https://www.ncf.edu/'
+    url: 'https://www.ncf.edu/',
   },
   {
     name: 'Ringling college of Art & Design',
     img: rcad,
-    url: 'https://www.ringling.edu/'
+    url: 'https://www.ringling.edu/',
   },
   {
     name: 'State College of Florida',
     img: scf,
-    url: 'http://www.scf.edu/'
+    url: 'http://www.scf.edu/',
   },
   {
     name: 'Suncoast Technical College',
     img: suncoast,
-    url: 'https://www.suncoast.edu/'
+    url: 'https://www.suncoast.edu/',
   },
   {
     name: 'University of South Florida',
     img: usf,
-    url: 'http://www.usf.edu/'
-  }
+    url: 'http://www.usf.edu/',
+  },
 ];
 
-export default campusInfo
+export default campusInfo;
