@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26b65573-be99-4ec2-9f26-5725d668ce4d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsonSchemas.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/RolandAbrego.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/RolandAbrego.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/sermons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sermons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Footer/PrivacyPolicy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/PrivacyPolicy.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainNav/Brand.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainNav/Brand.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/PDFMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/PDFMenu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/PDFViewer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/PDFViewer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/ProfileCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/ProfileCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/Search.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/Sermon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/Sermon.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Sermons/SermonList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/SermonList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Visit/Visit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Visit/Visit.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +47,7 @@
     <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="11.7.0" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.8.1" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -125,13 +135,9 @@
       <workItem from="1566068490984" duration="198000" />
       <workItem from="1566076146811" duration="2424000" />
       <workItem from="1566378613750" duration="522000" />
-    </task>
-    <task id="LOCAL-00115" summary="update config files">
-      <created>1563176086220</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1563176086220</updated>
+      <workItem from="1566416569733" duration="524000" />
+      <workItem from="1566423451005" duration="716000" />
+      <workItem from="1566426026782" duration="11421000" />
     </task>
     <task id="LOCAL-00116" summary="remove sass and create single style css">
       <created>1563176151410</created>
@@ -469,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566379126068</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="add new images to hero">
+      <created>1566427371344</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1566427371344</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TodoView">
@@ -512,9 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor visit &amp; fixed lint errors" />
-    <MESSAGE value="refactor common comps &amp; fixed lint errors" />
-    <MESSAGE value="refactor contact comps &amp; fixed lint errors" />
     <MESSAGE value="refactor family comps &amp; fixed lint errors" />
     <MESSAGE value="refactor footer comps &amp; fixed lint errors" />
     <MESSAGE value="refactor hero comps &amp; fixed lint errors" />
@@ -537,7 +547,10 @@
     <MESSAGE value="update prop types" />
     <MESSAGE value="update brand and Hero components" />
     <MESSAGE value="add prettier config settings &amp; minor fix to internship comp" />
-    <option name="LAST_COMMIT_MESSAGE" value="add prettier config settings &amp; minor fix to internship comp" />
+    <MESSAGE value="add new images to hero" />
+    <MESSAGE value="fix warnings, proptypes on various container" />
+    <MESSAGE value="fix lint issue with Seach comp" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix lint issue with Seach comp" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
