@@ -14,10 +14,10 @@ import sermonList from '../../api/sermons';
 
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   menuButton: {
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   nowPlaying: {
     flexGrow: 1,
@@ -26,41 +26,41 @@ const useStyles = makeStyles(theme => ({
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(1),
     backgroundColor: '#214146',
-    color: 'white'
+    color: 'white',
   },
   list: {
     width: '100%',
     backgroundColor: '#eceff1',
     position: 'relative',
     overflow: 'auto',
-    maxHeight: 440
+    maxHeight: 440,
   },
   togglePlayButton: {
     // Remember to use !important to overwrite inline styles.
-    backgroundColor: `green !important`
+    backgroundColor: `green !important`,
   },
   icon: {
-    marginRight: theme.spacing(2)
+    marginRight: theme.spacing(2),
   },
   card: {
     borderRadius: 0,
-    boxShadow: 'none'
+    boxShadow: 'none',
   },
   cardHeader: {
-    marginTop: theme.spacing(2)
+    marginTop: theme.spacing(2),
   },
   progress: {
     position: 'relative',
     top: 200,
-    left: 200
+    left: 200,
   },
   container: {
     marginTop: 64,
-    backgroundColor: '#eceff1'
+    backgroundColor: '#eceff1',
   },
   pdfContainer: {
-    backgroundColor: '#eceff1'
-  }
+    backgroundColor: '#eceff1',
+  },
 }));
 
 const Search = ({ handleClose }) => {
@@ -74,7 +74,7 @@ const Search = ({ handleClose }) => {
     const match = new RegExp(escapeRegExp(searchValue), 'i');
     const newList = sermonList.reduce((prev, cur) => {
       const newVal = Object.assign({}, cur, {
-        show: match.test(cur.title)
+        show: match.test(cur.title),
       });
       prev.push(newVal);
       return prev;
@@ -125,7 +125,7 @@ const Search = ({ handleClose }) => {
 };
 
 Search.propTypes = {
-  handleClose: PropTypes.func.isRequired
+  handleClose: PropTypes.func.isRequired,
 };
 
 export default Search;

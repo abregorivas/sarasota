@@ -1,23 +1,23 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { List, ListItem, IconButton, ListItemText } from '@material-ui/core';
+import {
+  List,
+  ListItem,
+  IconButton,
+  ListItemText,
+  ListItemSecondaryAction,
+  Tooltip,
+} from '@material-ui/core';
 import PictureAsPdf from '@material-ui/icons/PictureAsPdf';
 import CloudDownload from '@material-ui/icons/CloudDownload';
+import NotInterested from '@material-ui/icons/NotInterested';
 import { makeStyles, createStyles } from '@material-ui/styles';
 import uuid from 'uuid';
 
 const useStyles = makeStyles(theme =>
   createStyles({
     icon: {
-      marginRight: theme.spacing(2)
-    },
-    title: {
-      flexGrow: 1,
-      display: 'none',
-
-      [theme.breakpoints.up('md')]: {
-        display: 'block'
-      }
+      marginRight: theme.spacing(2),
     },
     list: {
       width: '100%',
@@ -25,33 +25,28 @@ const useStyles = makeStyles(theme =>
       position: 'relative',
       overflow: 'auto',
       height: `calc(100vh - 132px)`,
-      padding: 0
     },
-    // may want to pull this out to separate style to reuse root
     root: {
       width: '150px',
       whiteSpace: 'nowrap',
       overflow: 'hidden',
-      textOverflow: 'ellipsis'
+      textOverflow: 'ellipsis',
     },
-    input: {
-      display: 'none'
-    }
-  })
+  }),
 );
 
 const SermonList = props => {
   const classes = useStyles();
   const { sermons, setSermon, sermon } = props;
   return (
-    <List component="nav" dense className={classes.list}>
+    <List component="nav" className={classes.list}>
       {sermons
         .filter(el => el.show)
         .map(item => (
           <ListItem
-            button
             key={uuid()}
             selected={item.fileName === sermon.fileName}
+            button
           >
             <IconButton
               edge="start"
@@ -60,17 +55,13 @@ const SermonList = props => {
               href={`sermons/audio/${item.fileName}.mp3`}
               download
             >
-              <CloudDownload color="primary" download />
-            </IconButton>
-
-            <IconButton
-              edge="start"
-              className={classes.icon}
-              aria-label="Pdf Notes"
-              href={`sermons/pdf/${item.fileName}.pdf`}
-              download
-            >
-              <PictureAsPdf style={{ color: '#bf360c' }} />
+              {item.hasAudio ? (
+                <CloudDownload color="primary" download />
+              ) : (
+                <Tooltip title="No Audio Available">
+                  <NotInterested />
+                </Tooltip>
+              )}
             </IconButton>
 
             <ListItemText
@@ -78,6 +69,23 @@ const SermonList = props => {
               onClick={() => setSermon(item)}
               className={classes.root}
             />
+            <ListItemSecondaryAction>
+              <IconButton
+                edge="end"
+                className={classes.icon}
+                aria-label="Pdf Notes"
+                href={item.hasPdf ? `sermons/pdf/${item.fileName}.pdf` : null}
+                download
+              >
+                {item.hasPdf ? (
+                  <PictureAsPdf style={{ color: '#bf360c' }} />
+                ) : (
+                  <Tooltip title="No PDF Available">
+                    <NotInterested />
+                  </Tooltip>
+                )}
+              </IconButton>
+            </ListItemSecondaryAction>
           </ListItem>
         ))}
     </List>
@@ -93,8 +101,8 @@ SermonList.propTypes = {
     author: PropTypes.string,
     fileName: PropTypes.string,
     hasPdf: PropTypes.bool,
-    pdfPages: PropTypes.number
-  }).isRequired
+    pdfPages: PropTypes.number,
+  }).isRequired,
 };
 
 export default SermonList;

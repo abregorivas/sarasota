@@ -2,16 +2,11 @@ import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Card, CardContent, Button, Typography, Link } from '@material-ui/core';
 import ImageSlider from '../common/ImageSlider';
-// import forestRoad from '../../assets/images/hero/forestroad.jpg';
 import lighthouse from '../../assets/images/hero/lighthouse.jpg';
 import sarasota from '../../assets/images/hero/sarasota.jpg';
-// import morning from '../../assets/images/hero/morning-sun.jpg';
-// import beach from '../../assets/images/hero/architecture-beach-coast.jpg';
-// import beachClouds from '../../assets/images/hero/beach-clouds-daylight.jpg';
-import animalBeach from '../../assets/images/hero/animal-beach-coast.jpg'
-import seaStar from '../../assets/images/hero/sea-star.jpg'
-import handsup from '../../assets/images/hero/handsup.jpg'
-import sandals from '../../assets/images/hero/sandals.jpg'
+import seaStar from '../../assets/images/hero/sea-star.jpg';
+import handsup from '../../assets/images/hero/handsup.jpg';
+import sandals from '../../assets/images/hero/sandals.jpg';
 import BlockQuote from '../common/BlockQuote';
 
 const useStyles = makeStyles(theme => ({
@@ -20,7 +15,7 @@ const useStyles = makeStyles(theme => ({
     boxShadow: 'none',
     height: '100vh',
     backgroundColor: '#303D4D',
-    position: 'relative'
+    position: 'relative',
   },
   content: {
     position: 'absolute',
@@ -42,16 +37,16 @@ const useStyles = makeStyles(theme => ({
     left: '22%',
     [theme.breakpoints.down('sm')]: {
       width: '70%',
-      left: '35%'
+      left: '35%',
     },
     [theme.breakpoints.down('xs')]: {
       width: '100%',
-      left: '50%'
-    }
+      left: '50%',
+    },
   },
   heading: {
     textTransform: 'uppercase',
-    color: 'white'
+    color: 'white',
   },
   button: {
     display: 'inline-block',
@@ -65,9 +60,9 @@ const useStyles = makeStyles(theme => ({
     marginTop: theme.spacing(2),
     '&:hover': {
       borderColor: 'white',
-      color: 'white'
-    }
-  }
+      color: 'white',
+    },
+  },
 }));
 
 const Hero = () => {
@@ -76,7 +71,9 @@ const Hero = () => {
   return (
     <div className={classes.card}>
       <Card className={classes.card}>
-        <ImageSlider images={[ sarasota, handsup, sandals, animalBeach, seaStar, lighthouse]} />
+        <ImageSlider
+          images={[sarasota, handsup, lighthouse, sandals, seaStar]}
+        />
         <CardContent className={classes.content}>
           <Typography variant="h2" gutterBottom className={classes.heading}>
             Sarasota

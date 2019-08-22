@@ -4,18 +4,18 @@ import { makeStyles } from '@material-ui/styles';
 
 const useStyles = makeStyles({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   text: {
-    maxWidth: 600
-  }
+    maxWidth: 600,
+  },
 });
 
 const PrivacyPolicy = () => {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Typography variant="h3" gutterBottomame={classes.text}>
+      <Typography variant="h3" gutterBottom className={classes.text}>
         Privacy Policy
       </Typography>
       <br />

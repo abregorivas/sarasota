@@ -5,7 +5,7 @@ import {
   Button,
   Slide,
   Dialog,
-  Typography
+  Typography,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 import SectionContainer from '../common/SectionContainer';
@@ -23,8 +23,8 @@ const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     backgroundColor: '#F8F8F8',
     [theme.breakpoints.down('sm')]: {
-      height: 'auto'
-    }
+      height: 'auto',
+    },
   },
   avatar: {
     position: 'absolute',
@@ -33,12 +33,12 @@ const useStyles = makeStyles(theme => ({
     transform: `translate(-50%, -50%)`,
     border: `5px solid white`,
     height: 160,
-    width: 160
+    width: 160,
   },
   content: {
     maxWidth: 500,
     color: theme.palette.text.secondary,
-    position: 'relative'
+    position: 'relative',
   },
   button: {
     border: `1px solid #F5B733`,
@@ -49,9 +49,9 @@ const useStyles = makeStyles(theme => ({
     paddingLeft: theme.spacing(3),
     marginTop: theme.spacing(2),
     '&:hover': {
-      backgroundColor: '#F5B733'
-    }
-  }
+      backgroundColor: '#F5B733',
+    },
+  },
 }));
 
 const Transition = React.forwardRef(function Transition(props, ref) {

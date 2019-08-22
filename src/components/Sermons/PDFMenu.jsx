@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { makeStyles, withStyles } from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -9,19 +10,19 @@ import CloudDownload from '@material-ui/icons/CloudDownload';
 
 const StyledMenu = withStyles({
   paper: {
-    border: '1px solid #d3d4d5'
-  }
+    border: '1px solid #d3d4d5',
+  },
 })(props => (
   <Menu
     elevation={0}
     getContentAnchorEl={null}
     anchorOrigin={{
       vertical: 'bottom',
-      horizontal: 'center'
+      horizontal: 'center',
     }}
     transformOrigin={{
       vertical: 'top',
-      horizontal: 'center'
+      horizontal: 'center',
     }}
     {...props}
   />
@@ -32,16 +33,16 @@ const StyledMenuItem = withStyles(theme => ({
     '&:focus': {
       backgroundColor: theme.palette.primary.main,
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
-        color: theme.palette.common.white
-      }
-    }
-  }
+        color: theme.palette.common.white,
+      },
+    },
+  },
 }))(MenuItem);
 
 const useStyles = makeStyles(theme => ({
   button: {
-    marginRight: theme.spacing(2)
-  }
+    marginRight: theme.spacing(2),
+  },
 }));
 
 export default function PDFMenu({ sermon }) {
@@ -100,13 +101,10 @@ export default function PDFMenu({ sermon }) {
   );
 }
 
-//
-// <Button
-//   aria-controls="customized-menu"
-//   aria-haspopup="true"
-//   variant="contained"
-//   color="primary"
-//   onClick={handleClick}
-// >
-//   Open Menu
-// </Button>
+PDFMenu.propTypes = {
+  sermon: PropTypes.shape(PropTypes.object),
+};
+
+PDFMenu.defaultProps = {
+  sermon: {},
+};

@@ -13,17 +13,17 @@ const useStyles = makeStyles({
     borderRadius: 0,
     boxShadow: 'none',
     overflow: 'auto',
-    height: `calc(100vh - 200px)`
+    height: `calc(100vh - 200px)`,
   },
   media: {},
   progress: {
     position: 'relative',
     top: 200,
-    left: 200
+    left: 200,
   },
   root: {
-    background: '#eceff1'
-  }
+    background: '#eceff1',
+  },
 });
 
 const PDFViewer = props => {
@@ -72,7 +72,7 @@ const PDFViewer = props => {
           <Document
             options={{
               cMapUrl: `//cdn.jsdelivr.net/npm/pdfjs-dist@${pdfjs.version}/cmaps/`,
-              cMapPacked: true
+              cMapPacked: true,
             }}
             file={`sermons/pdf/${sermon.fileName}.pdf`}
             loading={
@@ -92,7 +92,11 @@ const PDFViewer = props => {
 };
 
 PDFViewer.propTypes = {
-  sermon: PropTypes.shape(PropTypes.object).isRequired
+  sermon: PropTypes.shape(PropTypes.object),
+};
+
+PDFViewer.defaultProps = {
+  sermon: {},
 };
 
 export default PDFViewer;

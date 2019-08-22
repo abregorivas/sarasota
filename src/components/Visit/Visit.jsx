@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { makeStyles, useTheme } from '@material-ui/styles';
 import uuid from 'uuid';
-import { Grid, Modal } from '@material-ui/core';
+import { Grid, Modal, DialogContent } from '@material-ui/core';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import VisitCard from './VisitCard';
 import GoogleMap from '../common/GoogleMap';
@@ -15,27 +15,9 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     [theme.breakpoints.down('sm')]: {
-      height: 'auto'
-    }
+      height: 'auto',
+    },
   },
-  // modalCard: {
-  //   position: 'absolute',
-  //   backgroundColor: theme.palette.background.paper,
-  //   boxShadow: theme.shadows[5],
-  //   padding: theme.spacing(4),
-  //   outline: 'none',
-  //   top: `50%`,
-  //   left: `50%`,
-  //   transform: `translate(-50%, -50%)`
-  // },
-  // modalMedia: {
-  //   width: 600,
-  //   height: 400,
-  //   [theme.breakpoints.down('xs')]: {
-  //     maxWidth: 360,
-  //     maxHeight: 260
-  //   }
-  // }
 }));
 
 const Visit = () => {
@@ -61,7 +43,9 @@ const Visit = () => {
           open={status}
           onClose={() => setStatus(false)}
         >
-          <GoogleMap url={map} />
+          <DialogContent>
+            <GoogleMap url={map} />
+          </DialogContent>
         </Modal>
 
         <Grid container spacing={matches ? 2 : 4}>

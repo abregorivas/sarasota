@@ -7,7 +7,7 @@ import {
   CardContent,
   Typography,
   Fab,
-  Link
+  Link,
 } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles';
 
@@ -17,28 +17,28 @@ const useStyles = makeStyles(theme => ({
     borderRadius: 0,
     boxShadow: `0 10px 30px rgba(0, 0, 0, 0.1)`,
     border: `1px solid transparent`,
-    backgroundColor: 'white'
+    backgroundColor: 'white',
   },
   actions: {
-    padding: 0
+    padding: 0,
   },
   content: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
 
   icon: {
     color: 'tomato',
-    marginLeft: theme.spacing(2)
+    marginLeft: theme.spacing(2),
   },
   fab: {
     position: 'relative',
     top: 0,
     left: `50%`,
-    transform: `translate(-50%, -50%)`
+    transform: `translate(-50%, -50%)`,
   },
   media: {
-    height: 300
-  }
+    height: 300,
+  },
 }));
 
 const ProfileCard = ({ img, title, subtitle, fabIcon, href }) => {
@@ -73,7 +73,10 @@ ProfileCard.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   fabIcon: PropTypes.node.isRequired,
-  href: PropTypes.func.isRequired
+  href: PropTypes.string,
+};
+ProfileCard.defaultProps = {
+  href: '',
 };
 
 export default ProfileCard;
