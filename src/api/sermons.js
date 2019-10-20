@@ -428,6 +428,33 @@ const sermons = [
     hasPdf: true,
     pdfPages: 7,
   },
+  {
+    title: 'Carrot, Egg or Coffee Bean',
+    date: '2019-09-22',
+    author: 'Ken Zindler',
+    fileName: 'Carrot,_Egg_or_Coffee_Bean_09_22_2019',
+    hasAudio: true,
+    hasPdf: true,
+    pdfPages: 7,
+  },
+  {
+    title: 'A Little Spit Goes A Long Way',
+    date: '2019-09-29',
+    author: 'Ken Zindler',
+    fileName: 'A_Little_Spit_Goes_A_Long_Way_09_29_2019',
+    hasAudio: true,
+    hasPdf: true,
+    pdfPages: 6,
+  },
+  {
+    title: 'Thorns Really Hurt',
+    date: '2019-10-06',
+    author: 'Ken Zindler',
+    fileName: 'Thorns_Really_Hurt_10_06_2019',
+    hasAudio: true,
+    hasPdf: true,
+    pdfPages: 8,
+  },
 ];
 
 const sermonList = sermons.sort(sortBy('-date')).reduce((prev, cur, index) => {

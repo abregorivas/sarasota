@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26b65573-be99-4ec2-9f26-5725d668ce4d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/sermons.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/sermons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/PrivacyPolicy.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/PrivacyPolicy.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Hero/Hero.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainNav/Brand.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainNav/Brand.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sermons/PDFMenu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/PDFMenu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sermons/PDFViewer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/PDFViewer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sermons/ProfileCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/ProfileCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sermons/Search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/Search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sermons/Sermon.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/Sermon.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sermons/SermonList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sermons/SermonList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Visit/Visit.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Visit/Visit.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/family/meachamFamily.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/family/meachamFamily.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/hero/handsup.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/hero/handsup.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/hero/sandals.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/hero/sandals.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/images/hero/sea-star.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/hero/sea-star.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +83,16 @@
       </list>
     </option>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -137,28 +140,15 @@
       <workItem from="1566378613750" duration="522000" />
       <workItem from="1566416569733" duration="524000" />
       <workItem from="1566423451005" duration="716000" />
-      <workItem from="1566426026782" duration="11421000" />
-    </task>
-    <task id="LOCAL-00116" summary="remove sass and create single style css">
-      <created>1563176151410</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1563176151411</updated>
-    </task>
-    <task id="LOCAL-00117" summary="create home comp">
-      <created>1563176196669</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1563176196669</updated>
-    </task>
-    <task id="LOCAL-00118" summary="refactor material ui theme">
-      <created>1563176208796</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1563176208796</updated>
+      <workItem from="1566426026782" duration="12521000" />
+      <workItem from="1567328575469" duration="148000" />
+      <workItem from="1569462883213" duration="1056000" />
+      <workItem from="1570069962056" duration="628000" />
+      <workItem from="1570766069390" duration="706000" />
+      <workItem from="1571073920567" duration="6000" />
+      <workItem from="1571257101378" duration="275000" />
+      <workItem from="1571592373986" duration="210000" />
+      <workItem from="1571592979474" duration="325000" />
     </task>
     <task id="LOCAL-00119" summary="create app, index and main html file">
       <created>1563176234602</created>
@@ -482,7 +472,28 @@
       <option name="project" value="LOCAL" />
       <updated>1566427371344</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="remove mulitline rule eslint jsx">
+      <created>1566447392767</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1566447392767</updated>
+    </task>
+    <task id="LOCAL-00166" summary="fix eslint issues on multiple components">
+      <created>1566447415676</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1566447415676</updated>
+    </task>
+    <task id="LOCAL-00167" summary="update workspace xml">
+      <created>1566447442030</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1566447442030</updated>
+    </task>
+    <option name="localTasksCounter" value="168" />
     <servers />
   </component>
   <component name="TodoView">
@@ -503,6 +514,17 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/gatsby-build" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -513,7 +535,13 @@
       <map>
         <entry key="Branch">
           <value>
-            <list />
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/gatsby-build" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
         <entry key="User">
@@ -525,9 +553,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor family comps &amp; fixed lint errors" />
-    <MESSAGE value="refactor footer comps &amp; fixed lint errors" />
-    <MESSAGE value="refactor hero comps &amp; fixed lint errors" />
     <MESSAGE value="refactor internship comps &amp; fixed lint errors" />
     <MESSAGE value="refactor navigation comps &amp; fixed lint errors" />
     <MESSAGE value="refactor googlemaps to purecomp &amp; withStyles" />
@@ -550,7 +575,10 @@
     <MESSAGE value="add new images to hero" />
     <MESSAGE value="fix warnings, proptypes on various container" />
     <MESSAGE value="fix lint issue with Seach comp" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix lint issue with Seach comp" />
+    <MESSAGE value="remove mulitline rule eslint jsx" />
+    <MESSAGE value="fix eslint issues on multiple components" />
+    <MESSAGE value="update workspace xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="update workspace xml" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>
